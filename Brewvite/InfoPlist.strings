@@ -1,0 +1,11 @@
+/*
+ InfoPlist.strings
+ 
+ */
+shortcutSubtitleCreateInvite = "Find people, get a beer";
+shortcutTitleCreateInvite =  "Create a Brewvite";
+
+shortcutTitleViewLists = "View Brewvite lists";
+
+shortcutSubtitleViewInvites = "See what you're invited to";
+shortcutTitleViewInvites = "View Invites";
