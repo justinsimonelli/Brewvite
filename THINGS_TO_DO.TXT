@@ -1,0 +1,12 @@
+APP STUFF
+-What happens when it crashes?
+-clean a lot of stuff up (lots of dup methods)
+-better UI
+-user reg/query/etc
+-multi-select users
+-accept/decline
+-push notifications (how much)
+-foursquare search
+-3rd party login?
+-background wake quick actions
+- < ios9?

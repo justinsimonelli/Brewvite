@@ -21,8 +21,6 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
-    let shareData = ShareData.sharedInstance
-    
     @IBAction func tapVenueLabel(sender: UIGestureRecognizer) {
         transition.startingPoint = (sender.view?.center)!
         transition.bubbleColor = UIColor.whiteColor()
@@ -55,8 +53,13 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
     
     @IBAction func drinkUpAction(sender: UIButton) {
         
+        if( ShareData.sharedInstance.selectedDate == nil || ShareData.sharedInstance.selectedVenue == nil ){
+            SweetAlert().showAlert("Drop the beer!", subTitle: "You forgot to add some stuff!", style: AlertStyle.Warning, buttonTitle: "Got it")
+        }
+        else{
+        
         let _view:BAFluidView = BAFluidView(frame:self.view.frame)
-        _view.fillColor = UIColor(red:0.98, green:0.69, blue:0.09, alpha:1.0)
+        _view.fillColor = UIColor(red:0.99, green:0.56, blue:0.15, alpha:1.0)
         _view.fillAutoReverse = false
         _view.fillDuration = 3
         _view.fillRepeatCount = 1
@@ -79,7 +82,13 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
         _view.startAnimation()
         
         self.view.insertSubview(_view, aboveSubview: self.view)
+            
+        }
 
+    }
+
+    override func prefersStatusBarHidden() -> Bool {
+        return false
     }
     
     /***
@@ -145,7 +154,7 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.transitionMode = .Dismiss
         transition.bubbleColor = (inviteButton.titleLabel?.textColor)!
-        handleDismissedTransition(shareData.selectedTransition)
+        handleDismissedTransition(ShareData.sharedInstance.selectedTransition)
         return transition
     }
     
@@ -153,16 +162,16 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
         if( selectedAction != nil ){
             print("dismissedTransition = \(selectedAction)")
             switch selectedAction!{
-            case shareData.TRANSITION_ACTIONS.date:
+            case ShareData.sharedInstance.TRANSITION_ACTIONS.date:
                 print("date")
-                dateLabel.text = generateButtonTitleForDate(shareData.selectedDate!)
+                dateLabel.text = generateButtonTitleForDate(ShareData.sharedInstance.selectedDate!)
                 dateButton.hidden = true
                 dateLabel.hidden = false
-            case shareData.TRANSITION_ACTIONS.invites:
+            case ShareData.sharedInstance.TRANSITION_ACTIONS.invites:
                 print("invites")
-            case shareData.TRANSITION_ACTIONS.venues:
+            case ShareData.sharedInstance.TRANSITION_ACTIONS.venues:
                 print("venues")
-                locationLabel.text = shareData.selectedVenue as? String
+                locationLabel.text = ShareData.sharedInstance.selectedVenue as? String
                 searchLocationsButton.hidden = true
                 locationLabel.hidden = false
             default:

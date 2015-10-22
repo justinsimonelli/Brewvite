@@ -12,13 +12,12 @@ class SelectTimeViewController: UIViewController {
 
     @IBOutlet weak var closeButton: UIButton!
     var buttonCenter:CGPoint!;
-    let shareData = ShareData.sharedInstance
     
     @IBOutlet weak var selectedDate: UIDatePicker!
     
     
     @IBAction func valueChangedAction(sender: AnyObject) {
-        shareData.selectedDate = selectedDate.date
+        ShareData.sharedInstance.selectedDate = selectedDate.date
     }
     
     override func viewDidLoad() {
@@ -35,8 +34,8 @@ class SelectTimeViewController: UIViewController {
     
     @IBAction func closeAction(sender: AnyObject) {
         //buttonCenter = closeButton.center
-        print("selectedDate=\(shareData.selectedDate)")
-        shareData.selectedTransition =  shareData.TRANSITION_ACTIONS.date
+        print("selectedDate=\(ShareData.sharedInstance.selectedDate)")
+        ShareData.sharedInstance.selectedTransition =  ShareData.sharedInstance.TRANSITION_ACTIONS.date
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 

@@ -15,7 +15,6 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
     var shouldShowSearchResults = false
     var dataArray = [String]()
     var filteredArray = [String]()
-    let shareData = ShareData.sharedInstance
     
     @IBOutlet weak var closeButton: UIButton!
     
@@ -23,7 +22,7 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
 
     @IBAction func closeAction(sender: UIButton) {
         searchController.view.removeFromSuperview()
-        shareData.selectedTransition = shareData.TRANSITION_ACTIONS.venues
+        ShareData.sharedInstance.selectedTransition = ShareData.sharedInstance.TRANSITION_ACTIONS.venues
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -75,8 +74,8 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
         let selectedData = currentCell.textLabel!.text!
         
         print(selectedData)
-        shareData.selectedVenue = selectedData
-        shareData.selectedTransition = shareData.TRANSITION_ACTIONS.venues
+        ShareData.sharedInstance.selectedVenue = selectedData
+        ShareData.sharedInstance.selectedTransition = ShareData.sharedInstance.TRANSITION_ACTIONS.venues
         searchController.view.removeFromSuperview()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
