@@ -82,6 +82,15 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
 
     }
     
+    /***
+
+
+     MOVE THIS TO A COMMON CLASS!!!! 
+     I AM DUPLICATED IN AfterSplashViewController
+
+
+
+    */
     func delay(delay:Double, closure:()->()) {
         
         dispatch_after(
