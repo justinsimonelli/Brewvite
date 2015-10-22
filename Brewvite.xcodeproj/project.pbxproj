@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A5E9C791BCEB08B000E4A5B /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9C781BCEB08B000E4A5B /* DatePickerDialog.swift */; settings = {ASSET_TAGS = (); }; };
-		2A5E9C7D1BCF02B1000E4A5B /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9C7C1BCF02B1000E4A5B /* LocationSearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2A5E9C841BCF0B50000E4A5B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9C831BCF0B50000E4A5B /* LocationManager.swift */; settings = {ASSET_TAGS = (); }; };
-		2AA48CAB1BD5A345007BA4E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AA48CAA1BD5A345007BA4E5 /* InfoPlist.strings */; settings = {ASSET_TAGS = (); }; };
-		2AA48CAD1BD5AAA8007BA4E5 /* InvitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA48CAC1BD5AAA8007BA4E5 /* InvitesViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2AA48CAF1BD5BF17007BA4E5 /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA48CAE1BD5BF17007BA4E5 /* ListsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2A3F0D311BD892EB00D81A1C /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F0D301BD892EB00D81A1C /* ShareData.swift */; };
+		2A5E9C791BCEB08B000E4A5B /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9C781BCEB08B000E4A5B /* DatePickerDialog.swift */; };
+		2A5E9C7D1BCF02B1000E4A5B /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9C7C1BCF02B1000E4A5B /* LocationSearchViewController.swift */; };
+		2A5E9C841BCF0B50000E4A5B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9C831BCF0B50000E4A5B /* LocationManager.swift */; };
+		2A9363BD1BD845B200477473 /* FoursquareSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9363BC1BD845B200477473 /* FoursquareSearchResult.swift */; };
+		2AA48CAB1BD5A345007BA4E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AA48CAA1BD5A345007BA4E5 /* InfoPlist.strings */; };
+		2AA48CAD1BD5AAA8007BA4E5 /* InvitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA48CAC1BD5AAA8007BA4E5 /* InvitesViewController.swift */; };
+		2AA48CAF1BD5BF17007BA4E5 /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA48CAE1BD5BF17007BA4E5 /* ListsViewController.swift */; };
+		2AAF04521BD7312100E75A2C /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF04511BD7312100E75A2C /* BubbleTransition.swift */; };
+		2AAF04581BD736C400E75A2C /* CreateInviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF04571BD736C400E75A2C /* CreateInviteViewController.swift */; };
+		2AAF045A1BD73A0000E75A2C /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF04591BD73A0000E75A2C /* SelectTimeViewController.swift */; };
 		2AB0CAC11BCDF89B00038B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0CAC01BCDF89B00038B4E /* AppDelegate.swift */; };
 		2AB0CAC31BCDF89B00038B4E /* BrewviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0CAC21BCDF89B00038B4E /* BrewviteViewController.swift */; };
 		2AB0CAC61BCDF89B00038B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB0CAC41BCDF89B00038B4E /* Main.storyboard */; };
@@ -21,7 +26,10 @@
 		2AB0CACE1BCDF89C00038B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB0CACC1BCDF89C00038B4E /* LaunchScreen.storyboard */; };
 		2AB0CAD91BCDF89C00038B4E /* BrewviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0CAD81BCDF89C00038B4E /* BrewviteTests.swift */; };
 		2AB0CAE41BCDF89C00038B4E /* BrewviteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0CAE31BCDF89C00038B4E /* BrewviteUITests.swift */; };
-		3ED2A2D4B8A0046459BF4DA5 /* Pods_Brewvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4689A38F6D5A29A5D0F37FCC /* Pods_Brewvite.framework */; };
+		2ABC834D1BD862800040E670 /* VenuesSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC834C1BD862800040E670 /* VenuesSearchTableViewController.swift */; };
+		2ABC83521BD878CF0040E670 /* countries.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC83511BD878CF0040E670 /* countries.txt */; };
+		2AC73FCC1BD7538200C741E3 /* Pods_Brewvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC73FCA1BD7538200C741E3 /* Pods_Brewvite.framework */; };
+		2AC73FCD1BD7538200C741E3 /* Pods_BrewviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC73FCB1BD7538200C741E3 /* Pods_BrewviteTests.framework */; };
 		645D58ACC175A2E2849344D1 /* Pods_BrewviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8BF1335D9BD8D599856F6D /* Pods_BrewviteTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,13 +52,17 @@
 
 /* Begin PBXFileReference section */
 		29FC8EED30AD2BFE8D678D58 /* Pods-Brewvite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brewvite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brewvite/Pods-Brewvite.debug.xcconfig"; sourceTree = "<group>"; };
+		2A3F0D301BD892EB00D81A1C /* ShareData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
 		2A5E9C781BCEB08B000E4A5B /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		2A5E9C7C1BCF02B1000E4A5B /* LocationSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
 		2A5E9C831BCF0B50000E4A5B /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		2A8F52D91BCE216500D090E9 /* Brewvite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brewvite-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A9363BC1BD845B200477473 /* FoursquareSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareSearchResult.swift; sourceTree = "<group>"; };
 		2AA48CAA1BD5A345007BA4E5 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		2AA48CAC1BD5AAA8007BA4E5 /* InvitesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitesViewController.swift; sourceTree = "<group>"; };
 		2AA48CAE1BD5BF17007BA4E5 /* ListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
+		2AAF04511BD7312100E75A2C /* BubbleTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleTransition.swift; sourceTree = "<group>"; };
+		2AAF04571BD736C400E75A2C /* CreateInviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateInviteViewController.swift; sourceTree = "<group>"; };
+		2AAF04591BD73A0000E75A2C /* SelectTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
 		2AB0CABD1BCDF89B00038B4E /* Brewvite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewvite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB0CAC01BCDF89B00038B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AB0CAC21BCDF89B00038B4E /* BrewviteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewviteViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +77,10 @@
 		2AB0CADF1BCDF89C00038B4E /* BrewviteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewviteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB0CAE31BCDF89C00038B4E /* BrewviteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewviteUITests.swift; sourceTree = "<group>"; };
 		2AB0CAE51BCDF89C00038B4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ABC834C1BD862800040E670 /* VenuesSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesSearchTableViewController.swift; sourceTree = "<group>"; };
+		2ABC83511BD878CF0040E670 /* countries.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = countries.txt; sourceTree = "<group>"; };
+		2AC73FCA1BD7538200C741E3 /* Pods_Brewvite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Brewvite.framework; path = "Pods/../build/Debug-iphoneos/Pods_Brewvite.framework"; sourceTree = "<group>"; };
+		2AC73FCB1BD7538200C741E3 /* Pods_BrewviteTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_BrewviteTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_BrewviteTests.framework"; sourceTree = "<group>"; };
 		4689A38F6D5A29A5D0F37FCC /* Pods_Brewvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brewvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		909F68854D469247334AD2A4 /* Pods-Brewvite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brewvite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brewvite/Pods-Brewvite.release.xcconfig"; sourceTree = "<group>"; };
 		C9A1E8EDA39C8A18C0095299 /* Pods-BrewviteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewviteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrewviteTests/Pods-BrewviteTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ED2A2D4B8A0046459BF4DA5 /* Pods_Brewvite.framework in Frameworks */,
+				2AC73FCC1BD7538200C741E3 /* Pods_Brewvite.framework in Frameworks */,
+				2AC73FCD1BD7538200C741E3 /* Pods_BrewviteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +130,7 @@
 		2A5E9C7E1BCF0935000E4A5B /* Third-Party */ = {
 			isa = PBXGroup;
 			children = (
+				2AAF04511BD7312100E75A2C /* BubbleTransition.swift */,
 				2A5E9C831BCF0B50000E4A5B /* LocationManager.swift */,
 				2A5E9C781BCEB08B000E4A5B /* DatePickerDialog.swift */,
 			);
@@ -122,6 +140,7 @@
 		2AB0CAB41BCDF89B00038B4E = {
 			isa = PBXGroup;
 			children = (
+				2ABC83511BD878CF0040E670 /* countries.txt */,
 				2AB0CABF1BCDF89B00038B4E /* Brewvite */,
 				2AB0CAD71BCDF89C00038B4E /* BrewviteTests */,
 				2AB0CAE21BCDF89C00038B4E /* BrewviteUITests */,
@@ -152,11 +171,15 @@
 				2AB0CACC1BCDF89C00038B4E /* LaunchScreen.storyboard */,
 				2AB0CACF1BCDF89C00038B4E /* Info.plist */,
 				2AB0CAC71BCDF89B00038B4E /* Brewvite.xcdatamodeld */,
-				2A8F52D91BCE216500D090E9 /* Brewvite-Bridging-Header.h */,
 				2A5E9C7C1BCF02B1000E4A5B /* LocationSearchViewController.swift */,
 				2AA48CAA1BD5A345007BA4E5 /* InfoPlist.strings */,
 				2AA48CAC1BD5AAA8007BA4E5 /* InvitesViewController.swift */,
 				2AA48CAE1BD5BF17007BA4E5 /* ListsViewController.swift */,
+				2AAF04571BD736C400E75A2C /* CreateInviteViewController.swift */,
+				2AAF04591BD73A0000E75A2C /* SelectTimeViewController.swift */,
+				2A9363BC1BD845B200477473 /* FoursquareSearchResult.swift */,
+				2ABC834C1BD862800040E670 /* VenuesSearchTableViewController.swift */,
+				2A3F0D301BD892EB00D81A1C /* ShareData.swift */,
 			);
 			path = Brewvite;
 			sourceTree = "<group>";
@@ -182,6 +205,8 @@
 		C9E7275A13A848023DE9B57E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AC73FCA1BD7538200C741E3 /* Pods_Brewvite.framework */,
+				2AC73FCB1BD7538200C741E3 /* Pods_BrewviteTests.framework */,
 				4689A38F6D5A29A5D0F37FCC /* Pods_Brewvite.framework */,
 				FB8BF1335D9BD8D599856F6D /* Pods_BrewviteTests.framework */,
 			);
@@ -302,6 +327,7 @@
 				2AB0CACE1BCDF89C00038B4E /* LaunchScreen.storyboard in Resources */,
 				2AA48CAB1BD5A345007BA4E5 /* InfoPlist.strings in Resources */,
 				2AB0CACB1BCDF89C00038B4E /* Assets.xcassets in Resources */,
+				2ABC83521BD878CF0040E670 /* countries.txt in Resources */,
 				2AB0CAC61BCDF89B00038B4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,12 +446,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AAF04521BD7312100E75A2C /* BubbleTransition.swift in Sources */,
 				2AB0CAC91BCDF89B00038B4E /* Brewvite.xcdatamodeld in Sources */,
 				2A5E9C791BCEB08B000E4A5B /* DatePickerDialog.swift in Sources */,
 				2AA48CAF1BD5BF17007BA4E5 /* ListsViewController.swift in Sources */,
+				2AAF04581BD736C400E75A2C /* CreateInviteViewController.swift in Sources */,
+				2A9363BD1BD845B200477473 /* FoursquareSearchResult.swift in Sources */,
 				2A5E9C841BCF0B50000E4A5B /* LocationManager.swift in Sources */,
 				2A5E9C7D1BCF02B1000E4A5B /* LocationSearchViewController.swift in Sources */,
+				2ABC834D1BD862800040E670 /* VenuesSearchTableViewController.swift in Sources */,
+				2AAF045A1BD73A0000E75A2C /* SelectTimeViewController.swift in Sources */,
 				2AA48CAD1BD5AAA8007BA4E5 /* InvitesViewController.swift in Sources */,
+				2A3F0D311BD892EB00D81A1C /* ShareData.swift in Sources */,
 				2AB0CAC31BCDF89B00038B4E /* BrewviteViewController.swift in Sources */,
 				2AB0CAC11BCDF89B00038B4E /* AppDelegate.swift in Sources */,
 			);
@@ -571,13 +603,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Justin  Simonelli (C627X8GT6P)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Justin  Simonelli (C627X8GT6P)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Brewvite/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.justin.sims.Brewvite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "34256b7b-06f1-4f9c-8b5a-9415eae1f266";
-				SWIFT_OBJC_BRIDGING_HEADER = "Brewvite/Brewvite-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -591,13 +628,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Justin  Simonelli (C627X8GT6P)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Justin  Simonelli (C627X8GT6P)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Brewvite/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.justin.sims.Brewvite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "34256b7b-06f1-4f9c-8b5a-9415eae1f266";
-				SWIFT_OBJC_BRIDGING_HEADER = "Brewvite/Brewvite-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

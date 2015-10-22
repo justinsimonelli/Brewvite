@@ -1,19 +1,20 @@
 # Uncomment this line to define a global platform for your project
- platform :ios, '8.0'
+#platform :ios, '8.0'
 # Uncomment this line if you're using Swift
- use_frameworks!
+
 
 target 'Brewvite' do
     pod 'ChameleonFramework/Swift'
-    pod 'SwiftAddressBook'
+    pod 'BAFluidView'
 end
 
 target 'BrewviteTests' do
     pod 'ChameleonFramework/Swift'
-    pod 'SwiftAddressBook'
+    pod 'BAFluidView'
 end
 
 target 'BrewviteUITests' do
 
 end
 
+use_frameworks!
