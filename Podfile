@@ -6,13 +6,13 @@
 target 'Brewvite' do
     pod 'ChameleonFramework/Swift'
     pod 'BAFluidView'
-    #pod 'QuadratTouch', '>= 1.0'
+    pod 'QuadratTouch', '>= 1.0'
 end
 
 target 'BrewviteTests' do
     pod 'ChameleonFramework/Swift'
     pod 'BAFluidView'
-    #pod 'QuadratTouch', '>= 1.0'
+    pod 'QuadratTouch', '>= 1.0'
 end
 
 target 'BrewviteUITests' do
