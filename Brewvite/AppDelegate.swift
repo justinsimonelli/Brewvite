@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 //import Parse
+import QuadratTouch
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -38,6 +39,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //Parse.setApplicationId("rWu8TjmSH2OlM33SjNfVHeQ0umpBe0m5mNy6orif", clientKey: "DT1aEIRGWx6QLeDAT5qImcl6rN8iiyHTPBnldmsV")
         
+        let client = Client(clientID:       "MMZADY2M0CQJRCNPPXLCSMNKZON1KKXRUTDR1K1U5GV5ODB5",
+            clientSecret:   "EK5PXBLLHOWJW4HWHHJQMPWEI3I5JYDKTMDNALTIJL1OQDYW",
+            redirectURL:    "breweries://foursquare")
+        var configuration = Configuration(client:client)
+        configuration.mode = "foursquare"
+        configuration.shouldControllNetworkActivityIndicator = true
+        Session.setupSharedSessionWithConfiguration(configuration)
         
         if let shortcutItem = launchOptions?[UIApplicationLaunchOptionsShortcutItemKey] as? UIApplicationShortcutItem {
             handleShortcut(shortcutItem)

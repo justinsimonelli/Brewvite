@@ -7,22 +7,29 @@
 //
 
 import UIKit
+import CoreLocation
+import QuadratTouch
+
+typealias JSONParameters = [String: AnyObject]
 
 class LocationSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate, UISearchResultsUpdating {
     
     var searchResults = [FoursquareSearchResult]()
     var searchController: UISearchController!
-    var shouldShowSearchResults = false
-    var dataArray = [String]()
-    var filteredArray = [String]()
+
+    var session: Session!
+    var currentTask: Task?
+    var location: CLLocation!
+    var venueItems : [[String: AnyObject]]?
     
     @IBOutlet weak var closeButton: UIButton!
     
     @IBOutlet weak var searchResultsTable: UITableView!
-
+    
     @IBAction func closeAction(sender: UIButton) {
-        searchController.view.removeFromSuperview()
-        ShareData.sharedInstance.selectedTransition = ShareData.sharedInstance.TRANSITION_ACTIONS.venues
+        searchController.searchBar.resignFirstResponder()
+        self.resignFirstResponder()
+        //ShareData.sharedInstance.selectedTransition = ShareData.sharedInstance.TRANSITION_ACTIONS.venues
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -31,41 +38,38 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
         super.viewDidLoad()
         closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
         
-        loadListOfCountries()
+        //loadListOfCountries()
         configureSearchController()
-        
+        session = Session.sharedSession()
+        attemptToRetrieveUserLocation()
         self.searchResultsTable.reloadData()
         
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if shouldShowSearchResults {
-            return filteredArray.count
+        if venueItems != nil {
+            return venueItems!.count
         }
-        else {
-            return dataArray.count
-        }
+        return 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("venueCell", forIndexPath: indexPath) 
-        
-        if shouldShowSearchResults {
-            cell.textLabel?.text = filteredArray[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("venueCell", forIndexPath: indexPath)
+            
+        let item = self.venueItems![indexPath.row] as JSONParameters!
+        let venueInfo = item["venue"] as? JSONParameters
+        if venueInfo != nil {
+            cell.textLabel!.text = venueInfo!["name"] as? String
         }
-        else {
-            cell.textLabel?.text = dataArray[indexPath.row]
-        }
-        
         return cell
-
     }
+
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
@@ -74,27 +78,11 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
         let selectedData = currentCell.textLabel!.text!
         
         print(selectedData)
+        searchResultsTable.deselectRowAtIndexPath(indexPath, animated: true)
         ShareData.sharedInstance.selectedVenue = selectedData
         ShareData.sharedInstance.selectedTransition = ShareData.sharedInstance.TRANSITION_ACTIONS.venues
-        searchController.view.removeFromSuperview()
+        //searchController.view.removeFromSuperview()
         self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    func loadListOfCountries() {
-        // Specify the path to the countries list file.
-        let pathToFile = NSBundle.mainBundle().pathForResource("countries", ofType: "txt")
-        
-        if let path = pathToFile {
-            // Load the file contents as a string.
-            do {
-                let content = try String(contentsOfFile:path, encoding: NSUTF8StringEncoding)
-                dataArray = content.componentsSeparatedByString("\n")
-            } catch _ as NSError {
-                
-            }
-            // Reload the tableview.
-            self.searchResultsTable.reloadData()
-        }
     }
     
     func configureSearchController(){
@@ -107,11 +95,10 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
         self.searchController.searchBar.placeholder = "Find a spot..."
         self.searchController.searchBar.sizeToFit()
         self.searchResultsTable.tableHeaderView = self.searchController.searchBar
-
+        
     }
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        shouldShowSearchResults = true
         self.searchResultsTable.reloadData()
     }
     
@@ -123,7 +110,6 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
     
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        shouldShowSearchResults = false
         searchController.searchBar.resignFirstResponder()
         self.resignFirstResponder()
         self.searchResultsTable.reloadData()
@@ -131,10 +117,7 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
     
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        if !shouldShowSearchResults {
-            shouldShowSearchResults = true
-            self.searchResultsTable.reloadData()
-        }
+        self.searchResultsTable.reloadData()
         
         searchController.searchBar.resignFirstResponder()
         self.resignFirstResponder()
@@ -144,40 +127,99 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
     // MARK: UISearchResultsUpdating delegate function
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
-        let searchString = searchController.searchBar.text
         
-        // Filter the data array and get only those countries that match the search text.
-        filteredArray = dataArray.filter({ (country) -> Bool in
-            let countryText: NSString = country
+        let whitespaceCharacterSet = NSCharacterSet.whitespaceCharacterSet(),
+        strippedString = searchController.searchBar.text!.stringByTrimmingCharactersInSet(whitespaceCharacterSet);
+        
+        if( !strippedString.isEmpty && strippedString.characters.count > 1 )
+        {
+            print(strippedString );
+            currentTask?.cancel()
+            var parameters = [Parameter.query:strippedString]
+            parameters += self.location.parameters()
+            currentTask = session.venues.search(parameters) {
+                (result) -> Void in
+                if let response = result.response
+                {
+                    if let venues = response["venues"] as? [JSONParameters]{
+                        for venue in venues
+                        {
+                            let name = venue["name"] as? String
+                            print("venue = \(name)")
+                        }
+                        self.searchResultsTable.reloadData()
+                        
+                    }
+                }
+            }
+            currentTask?.start()
             
-            return (countryText.rangeOfString(searchString!, options: NSStringCompareOptions.CaseInsensitiveSearch).location) != NSNotFound
-        })
-        // Reload the tableview.
-        self.searchResultsTable.reloadData()
+            self.searchResultsTable.reloadData()
+        }
     }
     
     func didChangeSearchText(searchText: String) {
         // Filter the data array and get only those countries that match the search text.
-        filteredArray = dataArray.filter({ (country) -> Bool in
-            let countryText: NSString = country
-            
-            return (countryText.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch).location) != NSNotFound
-        })
         
         // Reload the tableview.
         self.searchResultsTable.reloadData()
     }
-
-
+    
+    
     
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
+    
+    /**
+    Attempts to retrieve the users location.
+    The user will be prompted for their location, and depending on their choice,
+    this may or may not start tracking their location.
+    */
+    private func attemptToRetrieveUserLocation(){
+        
+        LocationManager.sharedInstance.showVerboseMessage = true
+        LocationManager.sharedInstance.autoUpdate = true
+        LocationManager.sharedInstance.startUpdatingLocationWithCompletionHandler { (latitude, longitude, status, verboseMessage, error) -> () in
+            
+            if( status == LocationManager.sharedInstance.PERMISSION_AUTHORIZED ){
+                
+                /*
+                ***********************************************
+                ***********************************************
+                THIS IS A MEGA-MONDO-SUPER HACK! FIX THIS!!!!!!
+                ***********************************************
+                ***********************************************
+                */
+                
+                self.location = LocationManager.sharedInstance.location
+            }else{
+                print(verboseMessage)
+                
+            }
+        }
+    }
+    
+}
 
+extension CLLocation {
+    func parameters() -> Parameters {
+        let ll      = "\(self.coordinate.latitude),\(self.coordinate.longitude)"
+        let llAcc   = "\(self.horizontalAccuracy)"
+        let alt     = "\(self.altitude)"
+        let altAcc  = "\(self.verticalAccuracy)"
+        let parameters = [
+            Parameter.ll:ll,
+            Parameter.llAcc:llAcc,
+            Parameter.alt:alt,
+            Parameter.altAcc:altAcc
+        ]
+        return parameters
+    }
 }
