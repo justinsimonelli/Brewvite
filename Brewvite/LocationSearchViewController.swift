@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import QuadratTouch
+import MapKit
 
 typealias JSONParameters = [String: AnyObject]
 
@@ -18,7 +19,8 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
     var session: Session!
     var currentTask: Task?
     var location: CLLocation!
-    var venueItems : [[String: AnyObject]]?
+    var venues: [JSONParameters]!
+    let distanceFormatter = MKDistanceFormatter()
     
     @IBOutlet weak var closeButton: UIButton!
     
@@ -50,19 +52,26 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if venueItems != nil {
-            return venueItems!.count
+        if venues != nil {
+            return venues!.count
         }
         return 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("venueCell", forIndexPath: indexPath)
-            
-        let venue = self.venueItems![indexPath.row] as JSONParameters!
-        if venue != nil {
-            cell.textLabel!.text = venue!["name"] as? String
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let venue = venues[indexPath.row]
+        if let venueLocation = venue["location"] as? JSONParameters {
+            var detailText = ""
+            if let distance = venueLocation["distance"] as? CLLocationDistance {
+                detailText = distanceFormatter.stringFromDistance(distance)
+            }
+            if let address = venueLocation["address"] as? String {
+                detailText = detailText +  " - " + address
+            }
+            cell.detailTextLabel?.text = detailText
         }
+        cell.textLabel?.text = venue["name"] as? String
         return cell
     }
 
@@ -129,23 +138,21 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
         
         if( !strippedString.isEmpty && strippedString.characters.count > 1 )
         {
+            if self.location == nil {
+                return
+            }
+            
             currentTask?.cancel()
             var parameters = [Parameter.query:strippedString]
             parameters += self.location.parameters()
             currentTask = session.venues.search(parameters) {
                 (result) -> Void in
-                if let response = result.response
-                {
-                    if let venues = response["venues"] as? [JSONParameters]{
-                        self.venueItems = venues
-                        self.searchResultsTable.reloadData()
-                        
-                    }
+                if let response = result.response {
+                    self.venues = response["venues"] as? [JSONParameters]
+                    self.searchResultsTable.reloadData()
                 }
             }
             currentTask?.start()
-            
-            self.searchResultsTable.reloadData()
         }
     }
     

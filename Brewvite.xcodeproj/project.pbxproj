@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0C9EED1BDAF417003AC3F8 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0C9EEC1BDAF417003AC3F8 /* Cells.swift */; };
 		2A3F0D311BD892EB00D81A1C /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F0D301BD892EB00D81A1C /* ShareData.swift */; };
 		2A4FFBE81BD8AFE800FF5A9B /* AfterSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FFBE71BD8AFE800FF5A9B /* AfterSplashViewController.swift */; };
 		2A4FFBEA1BD8C17A00FF5A9B /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FFBE91BD8C17A00FF5A9B /* SweetAlert.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		29FC8EED30AD2BFE8D678D58 /* Pods-Brewvite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brewvite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brewvite/Pods-Brewvite.debug.xcconfig"; sourceTree = "<group>"; };
+		2A0C9EEC1BDAF417003AC3F8 /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		2A3F0D301BD892EB00D81A1C /* ShareData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
 		2A4FFBE71BD8AFE800FF5A9B /* AfterSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterSplashViewController.swift; sourceTree = "<group>"; };
 		2A4FFBE91BD8C17A00FF5A9B /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
@@ -127,6 +129,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2A0C9EEE1BDAF434003AC3F8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2AB0CAC21BCDF89B00038B4E /* BrewviteViewController.swift */,
+				2A5E9C7C1BCF02B1000E4A5B /* LocationSearchViewController.swift */,
+				2AA48CAC1BD5AAA8007BA4E5 /* InvitesViewController.swift */,
+				2AA48CAE1BD5BF17007BA4E5 /* ListsViewController.swift */,
+				2AAF04571BD736C400E75A2C /* CreateInviteViewController.swift */,
+				2AAF04591BD73A0000E75A2C /* SelectTimeViewController.swift */,
+				2A4FFBE71BD8AFE800FF5A9B /* AfterSplashViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2A0C9EEF1BDAF44B003AC3F8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2A3F0D301BD892EB00D81A1C /* ShareData.swift */,
+				2A0C9EEC1BDAF417003AC3F8 /* Cells.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		2A5E9C7E1BCF0935000E4A5B /* Third-Party */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,22 +189,16 @@
 		2AB0CABF1BCDF89B00038B4E /* Brewvite */ = {
 			isa = PBXGroup;
 			children = (
+				2A0C9EEF1BDAF44B003AC3F8 /* Util */,
+				2A0C9EEE1BDAF434003AC3F8 /* ViewControllers */,
 				2A5E9C7E1BCF0935000E4A5B /* Third-Party */,
 				2AB0CAC01BCDF89B00038B4E /* AppDelegate.swift */,
-				2AB0CAC21BCDF89B00038B4E /* BrewviteViewController.swift */,
 				2AB0CAC41BCDF89B00038B4E /* Main.storyboard */,
 				2AB0CACA1BCDF89C00038B4E /* Assets.xcassets */,
 				2AB0CACC1BCDF89C00038B4E /* LaunchScreen.storyboard */,
 				2AB0CACF1BCDF89C00038B4E /* Info.plist */,
 				2AB0CAC71BCDF89B00038B4E /* Brewvite.xcdatamodeld */,
-				2A5E9C7C1BCF02B1000E4A5B /* LocationSearchViewController.swift */,
 				2AA48CAA1BD5A345007BA4E5 /* InfoPlist.strings */,
-				2AA48CAC1BD5AAA8007BA4E5 /* InvitesViewController.swift */,
-				2AA48CAE1BD5BF17007BA4E5 /* ListsViewController.swift */,
-				2AAF04571BD736C400E75A2C /* CreateInviteViewController.swift */,
-				2AAF04591BD73A0000E75A2C /* SelectTimeViewController.swift */,
-				2A3F0D301BD892EB00D81A1C /* ShareData.swift */,
-				2A4FFBE71BD8AFE800FF5A9B /* AfterSplashViewController.swift */,
 			);
 			path = Brewvite;
 			sourceTree = "<group>";
@@ -450,6 +469,7 @@
 				2AAF04521BD7312100E75A2C /* BubbleTransition.swift in Sources */,
 				2AB0CAC91BCDF89B00038B4E /* Brewvite.xcdatamodeld in Sources */,
 				2A5E9C791BCEB08B000E4A5B /* DatePickerDialog.swift in Sources */,
+				2A0C9EED1BDAF417003AC3F8 /* Cells.swift in Sources */,
 				2AA48CAF1BD5BF17007BA4E5 /* ListsViewController.swift in Sources */,
 				2AAF04581BD736C400E75A2C /* CreateInviteViewController.swift in Sources */,
 				2A5E9C841BCF0B50000E4A5B /* LocationManager.swift in Sources */,
