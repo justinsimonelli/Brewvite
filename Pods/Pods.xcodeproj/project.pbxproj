@@ -7,78 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		014EB8C2AFA070A99A81B10A63FF111D /* UIColor+ColorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F942CF0281EE2F56E514E426B598512 /* UIColor+ColorWithHex.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		0F8EFD6E04BC300EE8F3E061A1F99C24 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6F6653BD0A00D0E4B687683F30550A /* Chameleon_.m */; };
-		10210854CBA662066177AD8F4AE4DB18 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 39CFEF628FD680B1D0B1D7817C37EC8B /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BE977D21CB76D5FBF41F0A3C1A76FCA /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = CE3DB1DD0660A62509111E2FF956C5DD /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C99FE67DA4EEAAA04472844AF91F666 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = E261442C6EC565886F8AF3F3E4DFC17E /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2099A9669913B4E817910296DA210AB0 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 78041E1F84AD3D431738E4CF1062ADD8 /* UILabel+Chameleon.m */; };
-		233DCFE20CF7E835F0386996736335D2 /* BAFluidView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A753494DC13F2A3C99DCD9B61D05E08A /* BAFluidView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24D8E6650FA6889C73C4B08134C618DD /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B231B6C84FF5F542FC4EA8D3DEFF3 /* UIViewController+Chameleon.m */; };
-		294755BCE2D342579BDBA7BB14CCF577 /* Pods-Brewvite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420318D6803982F449FDC32AD05333D /* Pods-Brewvite-dummy.m */; };
-		2E9CADEED3992D567D59888A6F846133 /* BAFluidView.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE051E44C11ACB0C37CEC5A97C3357E /* BAFluidView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31F1149E2213FFA6B05D6F66CD6A2757 /* Pods-BrewviteTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A6B2E7B1590526249E9F5D647B4B4C0 /* Pods-BrewviteTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AADA8A23B62EED30AEA2F76F5017FC7 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = CA86FD48F9AAC68F581B0A943A3BC290 /* NSArray+Chameleon.m */; };
-		3D2367124B9607084EDD31DBFFE44482 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EFEAB6AC7F0829B504FC906C692D93 /* ChameleonFramework-dummy.m */; };
-		48B1A768A11C49885F70C35F2989E73B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
-		49A62D9FB702FA0A269EE0A8E9543B47 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D349CFFCD12D22EDF4986067EAFCCDB8 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D1150319B058BF2367CA2E90D3F47CD /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 26DB7F7DF1459AA9CC74E6B39B4929ED /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52300ECBD4333D35E99190CF2DC64BE8 /* BAFluidView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E53A6942A9069B83431A52DDA6A1F794 /* BAFluidView.bundle */; };
-		549664AE2322CEF24B8D948F874C85A8 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 228F6A597779911E24CE35134525E068 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EB256AD85363166C2F9AC08F6AB6CFE /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BEECC5969EA578C29505A3735050C /* UIButton+Chameleon.m */; };
-		639D53FCEF80A008224EB480173B86E7 /* BAFluidView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB476DF92866D24852179363A5B4E12F /* BAFluidView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		67EFFD29A3FAC5A87E0CCAD3C3CB5BC3 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CFEF762AC46660F96B70D6BA4B544 /* ChameleonShorthand.swift */; };
-		6E62C30D5585FD9F3F8C7E6C63B82074 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */; };
-		70BF84E9F40C1728B6FF2A2BF6E48046 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 9577052AE3C34BB4F2651A89E26792D6 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80D34BE804773D9AB582687D6FA73E23 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 98862778FCD1A0FCE0E1222484DE6AD3 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83A7AE46E6DACEA1C855064E3CFC9B76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
-		85CCFD550051FD7542FBC7075168ECA2 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 93200819D8DDABBFC47AC14DED54EC58 /* ChameleonConstants.m */; };
-		86F73C99F14DDD33E838AFB7E24D5A56 /* Pods-Brewvite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 871852F633A01BCC455B36234B770FDF /* Pods-Brewvite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E45EF502119DCD4D27D2DF8219C1A59 /* UIColor+ColorWithHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A482B5553C61AB47EDE838EBBDCAEA /* UIColor+ColorWithHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91B32D78462E0438A18A665B71CD54AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
-		9B4AB6F5248C24541B5D4B968DAF4AD3 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = B13A3CFB9BD0501BDA915C1C6E3136CB /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D406797A4A0768569B06248B8894456 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */; };
-		A6BC12D1B9506CD16E31DC7F02302E55 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E3B1FECE99517D445EF388E88E653 /* UIColor+Chameleon.m */; };
-		A96DC52DFE6DAA8D0623E7128821DB21 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 122F4758AE9148E7E11686B0350A64A6 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B46468E03EBBD87D15E78729A4EE6853 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A40A65E6EFEEEFB8ECE19091CD90148 /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B83A4289689B6D85A34359225306CE77 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C962534C780DA4FCD3661596711358B /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDA423B9D68C1B0E68B3F42519258C21 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8693D3E9565F44308BB0CAA36319C720 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C248B670FB60AF6726BD2B37C0300AC7 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 862ABE3C3B255672014E61388A0CAF09 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6DD5AAF7350C93043F9EFDBAB686925 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */; };
-		CEF7F5AF042D55285B21DD6F60C287EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */; };
-		D3730EF3DB77136EC9158C2D949B332E /* BAFluidView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA8557F7E864F2387E8FC216FE31580 /* BAFluidView-dummy.m */; };
-		D8909DD14303314C105E05897201C46A /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7FB7065D3F108576A51259CDA11F2 /* UIImage+ChameleonPrivate.m */; };
-		DAAACB14FDB689BF049F309085B5EA7B /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = C106CCAE8FB0E1C5DF2B203C46A2363E /* UIColor+ChameleonPrivate.m */; };
-		EA3FA19F3EAF7DD1B89CA7EF6CA8D555 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 726D032B1B589695AF49A659DB7794C1 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAA6A7284950B065EAC6123E13EBD602 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
-		F239EC2C1BA606BC2469F2AF3375D1AB /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 084CCE41BC2565BC103E079743D4DAD0 /* UINavigationController+Chameleon.m */; };
-		F88736AF4D580F285C6A3B4585602BE8 /* Pods-BrewviteTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB87B3012903F0AD123DABCBD7385A07 /* Pods-BrewviteTests-dummy.m */; };
-		FBD8A23B47AF7594688D4EAEA3E1F053 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7082A887C38E35693A0C542867C8ACF5 /* UIView+ChameleonPrivate.m */; };
+		014EB8C2AFA070A99A81B10A63FF111D /* UIColor+ColorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = C35B98A54FFBA5D87DBC6809F7C02494 /* UIColor+ColorWithHex.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		02A8ED584CCDC590E04F5075E4FED56B /* Pods-BrewviteTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB87B3012903F0AD123DABCBD7385A07 /* Pods-BrewviteTests-dummy.m */; };
+		04EB893E677EE2B670FA09911B193310 /* Multi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64110FFA4479956231478A2765BDF141 /* Multi.swift */; };
+		0651CDE566F7D0C5C75FEAA674B7C8EE /* OauthErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56A4540C0488CBDFFF0EE7F10C6E54C /* OauthErrors.swift */; };
+		0D8E9B886F47889906D3F6482ABBF219 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B4C69769AAEB05320928BFF1CC18DA /* SystemConfiguration.framework */; };
+		0DDE0D71E427A448C1D9AAD4DFB9E6C5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC48C553D03DE8B64E9D9340583AD8E /* Task.swift */; };
+		0F8EFD6E04BC300EE8F3E061A1F99C24 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B8F96EFE9B778B841E26F668029C12 /* Chameleon_.m */; };
+		0FB32A7A3B149EA043E07D78550638FD /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9ED2F67F3878CBFA6D9E096E76DE8A /* Session.swift */; };
+		10210854CBA662066177AD8F4AE4DB18 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE8002ADDEFAF183BC42AE57104109B /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BE977D21CB76D5FBF41F0A3C1A76FCA /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = FDBD7DAD882AF7366C92D41C2F7C8B3C /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C99FE67DA4EEAAA04472844AF91F666 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = C68351487A8311D1E6DA89EFE99130A3 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2099A9669913B4E817910296DA210AB0 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D44FDF6C2FEDD94B8BC3BA81E745BE2 /* UILabel+Chameleon.m */; };
+		233B2A94B5C3FC2DB0676EF0D501560B /* Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664B643427A4D05886961B6D6753864 /* Lists.swift */; };
+		233DCFE20CF7E835F0386996736335D2 /* BAFluidView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF33F8DD99183FECB79E130F84D7187 /* BAFluidView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24D8E6650FA6889C73C4B08134C618DD /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 163E02AC728D3B333DDCAEFB10611671 /* UIViewController+Chameleon.m */; };
+		2E9CADEED3992D567D59888A6F846133 /* BAFluidView.h in Headers */ = {isa = PBXBuildFile; fileRef = 186F673639F4580D8AB12012C5CA0304 /* BAFluidView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA5FC86665BA9D90A6C135204B632A6 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD661A11351FEC2BBD9CD6B5EF061059 /* Users.swift */; };
+		301539B16198264B6401E006010BE9C9 /* Updates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39720B8795BC6EF333BE8AD87DA25E56 /* Updates.swift */; };
+		3025ADA3E1C6788DE1D8C1AF63A16614 /* Specials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBAADD31C563347D523BEE5EAA8F02 /* Specials.swift */; };
+		3316609F0E4E90CB57C5AE5247077A0E /* PageUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A90CC74BD7FC4B3D8D3507356A29A1 /* PageUpdates.swift */; };
+		3AADA8A23B62EED30AEA2F76F5017FC7 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6036D72561B170D4070FD83DB53108A9 /* NSArray+Chameleon.m */; };
+		3D2367124B9607084EDD31DBFFE44482 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BCEB4A38F58A6316A6D63A4D1FDE10 /* ChameleonFramework-dummy.m */; };
+		3D39F8F4B538EEE27FAF9D1D43E4F691 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABE7826020F809094B9D7DB85510CAB /* Foundation.framework */; };
+		42A09C10BCA125EEAE85F7171E615ABC /* VenueGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844BC61CE3736752AAB69A963506020 /* VenueGroups.swift */; };
+		49A62D9FB702FA0A269EE0A8E9543B47 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FE4A522E65A3051F7B0E693B7CEE46 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AB75E12306C09D1ED6DD831FC664EB4 /* Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142503A1BB7D53DC4716E4F9358B9A5 /* Venues.swift */; };
+		4D1150319B058BF2367CA2E90D3F47CD /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = A8193803C210CE3384E4555922C0305F /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52300ECBD4333D35E99190CF2DC64BE8 /* BAFluidView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63952FC6DF6500D263CCFE738BD674D3 /* BAFluidView.bundle */; };
+		549664AE2322CEF24B8D948F874C85A8 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE0120E4EC47B978F34343418287087 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		559484D152EF5E58C0A006533832C7C7 /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E8068F150E83CAEBE1F763E2051DAE /* AuthorizationViewController.xib */; };
+		59867AE27C0BAA645E340A8503567D18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABE7826020F809094B9D7DB85510CAB /* Foundation.framework */; };
+		5BA9894943F1768B062671B451D3FC7B /* QuadratTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = F9B41B2C49368F51E709D9E17D7DA1C4 /* QuadratTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB256AD85363166C2F9AC08F6AB6CFE /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD2BB2CA5908C98455F85E4EC8729A /* UIButton+Chameleon.m */; };
+		639D53FCEF80A008224EB480173B86E7 /* BAFluidView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2141F31A166FA9237F74290B58ADD50A /* BAFluidView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		67EFFD29A3FAC5A87E0CCAD3C3CB5BC3 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B4383FC6B8F683FB056E30EC4B9BD /* ChameleonShorthand.swift */; };
+		6A52970C45D976F63A5440468880EC97 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653EDD0F898461E80EB19343F0FBF47B /* Parameters.swift */; };
+		6D87ABE20F3FB56310AA251163A6BD7B /* Authorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39C3903CFD7794706AFE66F1F695649 /* Authorizer.swift */; };
+		6E62C30D5585FD9F3F8C7E6C63B82074 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8277DD60FCADB8888ECFD713C2E360 /* UIKit.framework */; };
+		70BF84E9F40C1728B6FF2A2BF6E48046 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C60DCDB0F746671D52359A99AB76F81 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78E6E6150074582726E9536A404D12B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABE7826020F809094B9D7DB85510CAB /* Foundation.framework */; };
+		7CBCC2C964C43D9142612638AC155C54 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EE6E5436F819D20C477C38874C2BC /* Photos.swift */; };
+		80CB366F3DDD73C064DD63F1AE8522FC /* DataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AECB574B15593C65D3D7F6F92232E12 /* DataCache.swift */; };
+		80D34BE804773D9AB582687D6FA73E23 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 49581D63994A475CCD07E1DC88F0383C /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83A7AE46E6DACEA1C855064E3CFC9B76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABE7826020F809094B9D7DB85510CAB /* Foundation.framework */; };
+		85CCFD550051FD7542FBC7075168ECA2 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CA7893BEA728D20E60253ADF8C266 /* ChameleonConstants.m */; };
+		86C32F9373B5A42B39B5C8AF6BB355BE /* QuadratTouch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93ADB8507F3EECD59A282245FC0DBBCB /* QuadratTouch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DC7A7329DB1E9DA386B9CE88C3713DE /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7880AB7F7390CD48D3281BAC932E6 /* Authorization.swift */; };
+		8E45EF502119DCD4D27D2DF8219C1A59 /* UIColor+ColorWithHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 38EBD3E84086053E18DE4B623DC14790 /* UIColor+ColorWithHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9093524B4ED43390360DDA648564A177 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27206A3C81CDFD0757CEDEB390ADEEB7 /* Request.swift */; };
+		91B32D78462E0438A18A665B71CD54AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABE7826020F809094B9D7DB85510CAB /* Foundation.framework */; };
+		94672909FA7EF09A9DFEF9BE1EBB952F /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6F859DC18A8F49CA7892AB04FFE809 /* AuthorizationViewController.swift */; };
+		948E91D06648BFDBDBEAD3EE901005EC /* Checkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E5123D15322D67BD8FE3948CE9FB5 /* Checkins.swift */; };
+		95545EFEF9A5434B515E6EA0D4F43116 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B355F705B313558B7F43847FA04CBD /* Events.swift */; };
+		992C3CFF412FF378F30A8E0BDF70B520 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AB08D699D2EE893EA3638B1C4DA96 /* Tips.swift */; };
+		9B240D99610FFBAE4D25C1CD47E42C0E /* NativeTouchAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAF2706EB3EF0765D244F35254EA0B /* NativeTouchAuthorizer.swift */; };
+		9B4AB6F5248C24541B5D4B968DAF4AD3 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8823B7F111C0364F85D4FD855CAF7FA8 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D406797A4A0768569B06248B8894456 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6160F7B34F8D75C00D15E025E61535 /* QuartzCore.framework */; };
+		9EA26C308FAD611E063AC8A5545F0155 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F06C18D2237E96921B4D04F48BE8E7B /* Endpoint.swift */; };
+		A6BC12D1B9506CD16E31DC7F02302E55 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB2918FA2C53E98EC76C8D1A3FEBA34 /* UIColor+Chameleon.m */; };
+		A96DC52DFE6DAA8D0623E7128821DB21 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 13BA7BFF8D2A55EA833F4AD3DD6C99C8 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB905EFF90E8A52B7D526A012F44EDFD /* Pods-Brewvite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420318D6803982F449FDC32AD05333D /* Pods-Brewvite-dummy.m */; };
+		B46468E03EBBD87D15E78729A4EE6853 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA53A896DF59A4015CAD0B345AF4BD82 /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7BC8DF32A8020EF691C0A4E327FCBD4 /* TouchAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647656FA9F01A5EC0423968822E08124 /* TouchAuthorizer.swift */; };
+		B83A4289689B6D85A34359225306CE77 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = AD8A934E827E82A1CAD2E22B22B4F19D /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDA1F310E675494977A867A22393FA4D /* Pods-BrewviteTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A6B2E7B1590526249E9F5D647B4B4C0 /* Pods-BrewviteTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDA423B9D68C1B0E68B3F42519258C21 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F01FE6532DA6870DA6C374E42B00AE /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE5CFD10EAE139BE860F7D29EC9D03AB /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFBE47A2A5AA37EBDAFB459A88140BE /* Pages.swift */; };
+		C248B670FB60AF6726BD2B37C0300AC7 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1350C6333958D596279E25BE39519FE0 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C36DB4D80DF50F331E7C1714E75F3AE0 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627060F8648766182D2B8A4064B0F9C /* Keychain.swift */; };
+		C65A5116075E951D9990F1F282E06E45 /* QuadratTouch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E641783EF1C99E5CFE5BF0F2F026DDF2 /* QuadratTouch-dummy.m */; };
+		C6DD5AAF7350C93043F9EFDBAB686925 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ADC5414456B68ABD8269199A7505C16 /* CoreGraphics.framework */; };
+		C841696AA093FF17C6F012D417CF4631 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC88D7AB713474774901AFA897EEBE /* Settings.swift */; };
+		CEF7F5AF042D55285B21DD6F60C287EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8277DD60FCADB8888ECFD713C2E360 /* UIKit.framework */; };
+		D14E06E75DE7F710292BB77E485F97BD /* NetworkActivityIndicatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA45B46103DF76E4493D5A7CD4EB75 /* NetworkActivityIndicatorController.swift */; };
+		D3730EF3DB77136EC9158C2D949B332E /* BAFluidView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB43096714D22F004F2A4E47DC27A075 /* BAFluidView-dummy.m */; };
+		D8909DD14303314C105E05897201C46A /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE77789F83128010182D9B70C937A7BD /* UIImage+ChameleonPrivate.m */; };
+		DAAACB14FDB689BF049F309085B5EA7B /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F392D4EC7FAD2DA93BD0D1EF1DEA4CC /* UIColor+ChameleonPrivate.m */; };
+		E2A2E1A657E30855D359AB151A8A3938 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F15FD43EA633C2A9D87D18F620B7314 /* Result.swift */; };
+		EA3FA19F3EAF7DD1B89CA7EF6CA8D555 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAA3381A33D723469DC876B58455C4F /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB69F84F6265AC41C44DE4F149A59019 /* Pods-Brewvite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 871852F633A01BCC455B36234B770FDF /* Pods-Brewvite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F239EC2C1BA606BC2469F2AF3375D1AB /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF028D306536AC440028121AA0BEA3 /* UINavigationController+Chameleon.m */; };
+		F3E7A1F4E1CB36A6EC298A188924A646 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28985BE661D33B0BC22974F6F5F6BC /* Logger.swift */; };
+		FADF54354D84644D7941C56C1328100B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57933DD24FD2E7A2B53B6C6273080F42 /* Configuration.swift */; };
+		FBD8A23B47AF7594688D4EAEA3E1F053 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 190875F7B13CEF525949804469A8610C /* UIView+ChameleonPrivate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1DEDA24CABFBDA1B00C3B412ACB78C3A /* PBXContainerItemProxy */ = {
+		33DCDF659E0A4DC5F5EDCC2161CAC4FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9883DF06E8D2D66F932D42F0FCA1F6E9;
+			remoteInfo = ChameleonFramework;
+		};
+		7B1A0024044EF83ED85BB573FE3ED83B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 41CFA64B516ED9C08853FCDF6BC11F03;
 			remoteInfo = BAFluidView;
 		};
-		6599AB0B6B8BD42DCBB046309C3EAF1F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9883DF06E8D2D66F932D42F0FCA1F6E9;
-			remoteInfo = ChameleonFramework;
-		};
-		6EB605389E1C665D5780E56AD7283B08 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9883DF06E8D2D66F932D42F0FCA1F6E9;
-			remoteInfo = ChameleonFramework;
-		};
-		CE45840EA9DD67B9FE1446123E25592B /* PBXContainerItemProxy */ = {
+		91422A279E014A8460B8A320C65027BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -92,89 +122,152 @@
 			remoteGlobalIDString = 26CF5D844007F2F83341C41BBB0A4FEC;
 			remoteInfo = "BAFluidView-BAFluidView";
 		};
+		E6097D7A032A7F697B45FA291513417B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42DA8113B141A43744881D86707DECC5;
+			remoteInfo = QuadratTouch;
+		};
+		F17E9ABEB2B61FB9348384DC37F0D3AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9883DF06E8D2D66F932D42F0FCA1F6E9;
+			remoteInfo = ChameleonFramework;
+		};
+		FC91A1726A7FF775C1A6A3B24E35D203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42DA8113B141A43744881D86707DECC5;
+			remoteInfo = QuadratTouch;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0424F18FBF2B49FECC85147741C4C881 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F01FE6532DA6870DA6C374E42B00AE /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
 		08296A82EBC6E7F9DCBF9E69505C0982 /* Pods-BrewviteTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BrewviteTests-resources.sh"; sourceTree = "<group>"; };
-		084CCE41BC2565BC103E079743D4DAD0 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
-		0A62FA372BD7D841CC0A84A318498870 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
-		0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		122F4758AE9148E7E11686B0350A64A6 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
+		0AC48C553D03DE8B64E9D9340583AD8E /* Task.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Source/Shared/Task.swift; sourceTree = "<group>"; };
+		0ADA45B46103DF76E4493D5A7CD4EB75 /* NetworkActivityIndicatorController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityIndicatorController.swift; path = Source/Shared/NetworkActivityIndicatorController.swift; sourceTree = "<group>"; };
+		1350C6333958D596279E25BE39519FE0 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		13BA7BFF8D2A55EA833F4AD3DD6C99C8 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
 		15213BDE5DA728C6E12B6D798D89EDB3 /* Pods-Brewvite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brewvite.release.xcconfig"; sourceTree = "<group>"; };
-		1DE7FB7065D3F108576A51259CDA11F2 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		228F6A597779911E24CE35134525E068 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
-		26DB7F7DF1459AA9CC74E6B39B4929ED /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		163E02AC728D3B333DDCAEFB10611671 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		17FF8BDF00395A941B107CAA592DE186 /* QuadratTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuadratTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		186F673639F4580D8AB12012C5CA0304 /* BAFluidView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAFluidView.h; path = Pod/Classes/BAFluidView.h; sourceTree = "<group>"; };
+		190875F7B13CEF525949804469A8610C /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		19B4C69769AAEB05320928BFF1CC18DA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		1FBD2BB2CA5908C98455F85E4EC8729A /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		2141F31A166FA9237F74290B58ADD50A /* BAFluidView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BAFluidView.m; path = Pod/Classes/BAFluidView.m; sourceTree = "<group>"; };
+		27206A3C81CDFD0757CEDEB390ADEEB7 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Shared/Request.swift; sourceTree = "<group>"; };
 		27EC8FE474B86C3B8BF8AE2600048443 /* Pods-BrewviteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BrewviteTests.release.xcconfig"; sourceTree = "<group>"; };
-		2A6F6653BD0A00D0E4B687683F30550A /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
-		2F2E3B1FECE99517D445EF388E88E653 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		2844BC61CE3736752AAB69A963506020 /* VenueGroups.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VenueGroups.swift; path = Source/Shared/Endpoints/VenueGroups.swift; sourceTree = "<group>"; };
+		2C8E5123D15322D67BD8FE3948CE9FB5 /* Checkins.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checkins.swift; path = Source/Shared/Endpoints/Checkins.swift; sourceTree = "<group>"; };
+		2DB2918FA2C53E98EC76C8D1A3FEBA34 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		2F392D4EC7FAD2DA93BD0D1EF1DEA4CC /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		3420318D6803982F449FDC32AD05333D /* Pods-Brewvite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Brewvite-dummy.m"; sourceTree = "<group>"; };
-		39CFEF628FD680B1D0B1D7817C37EC8B /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		3C962534C780DA4FCD3661596711358B /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
-		3EFA087CCA8AA435443EAF481D3D8518 /* BAFluidView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BAFluidView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FA8557F7E864F2387E8FC216FE31580 /* BAFluidView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BAFluidView-dummy.m"; sourceTree = "<group>"; };
+		38EBD3E84086053E18DE4B623DC14790 /* UIColor+ColorWithHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ColorWithHex.h"; path = "Pod/Classes/UIColor+ColorWithHex.h"; sourceTree = "<group>"; };
+		39720B8795BC6EF333BE8AD87DA25E56 /* Updates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Updates.swift; path = Source/Shared/Endpoints/Updates.swift; sourceTree = "<group>"; };
+		41EAF2706EB3EF0765D244F35254EA0B /* NativeTouchAuthorizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeTouchAuthorizer.swift; path = Source/iOS/NativeTouchAuthorizer.swift; sourceTree = "<group>"; };
 		472F40242DC94652034260D6FAF8628B /* Pods-Brewvite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brewvite.debug.xcconfig"; sourceTree = "<group>"; };
-		4A5BEECC5969EA578C29505A3735050C /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
-		4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4838578B430FC6254E2E1273CE4AF1AF /* BAFluidView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAFluidView-prefix.pch"; sourceTree = "<group>"; };
+		49581D63994A475CCD07E1DC88F0383C /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		4AFBE47A2A5AA37EBDAFB459A88140BE /* Pages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pages.swift; path = Source/Shared/Endpoints/Pages.swift; sourceTree = "<group>"; };
 		4C892A4AF77AFDF8F3756E87C78744B7 /* Pods-BrewviteTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BrewviteTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		55A482B5553C61AB47EDE838EBBDCAEA /* UIColor+ColorWithHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ColorWithHex.h"; path = "Pod/Classes/UIColor+ColorWithHex.h"; sourceTree = "<group>"; };
-		5873E7B23F6AD8C72B54E4D670796A1B /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		4F06C18D2237E96921B4D04F48BE8E7B /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = Source/Shared/Endpoints/Endpoint.swift; sourceTree = "<group>"; };
+		4F15FD43EA633C2A9D87D18F620B7314 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Shared/Result.swift; sourceTree = "<group>"; };
+		50FE4A522E65A3051F7B0E693B7CEE46 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		5262099835093ED67F4C6885BD01E547 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5664B643427A4D05886961B6D6753864 /* Lists.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lists.swift; path = Source/Shared/Endpoints/Lists.swift; sourceTree = "<group>"; };
+		57933DD24FD2E7A2B53B6C6273080F42 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Source/Shared/Configuration.swift; sourceTree = "<group>"; };
 		5A6B2E7B1590526249E9F5D647B4B4C0 /* Pods-BrewviteTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BrewviteTests-umbrella.h"; sourceTree = "<group>"; };
-		6F942CF0281EE2F56E514E426B598512 /* UIColor+ColorWithHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ColorWithHex.m"; path = "Pod/Classes/UIColor+ColorWithHex.m"; sourceTree = "<group>"; };
+		5AECB574B15593C65D3D7F6F92232E12 /* DataCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataCache.swift; path = Source/Shared/DataCache.swift; sourceTree = "<group>"; };
+		5C6F859DC18A8F49CA7892AB04FFE809 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationViewController.swift; path = Source/iOS/AuthorizationViewController.swift; sourceTree = "<group>"; };
+		5F6B4383FC6B8F683FB056E30EC4B9BD /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
+		6036D72561B170D4070FD83DB53108A9 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		6142503A1BB7D53DC4716E4F9358B9A5 /* Venues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Venues.swift; path = Source/Shared/Endpoints/Venues.swift; sourceTree = "<group>"; };
+		61C022AB659929E6D088E18450F5A0CA /* BAFluidView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BAFluidView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63952FC6DF6500D263CCFE738BD674D3 /* BAFluidView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAFluidView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		64110FFA4479956231478A2765BDF141 /* Multi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Multi.swift; path = Source/Shared/Endpoints/Multi.swift; sourceTree = "<group>"; };
+		647656FA9F01A5EC0423968822E08124 /* TouchAuthorizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchAuthorizer.swift; path = Source/iOS/TouchAuthorizer.swift; sourceTree = "<group>"; };
+		653EDD0F898461E80EB19343F0FBF47B /* Parameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = Source/Shared/Parameters.swift; sourceTree = "<group>"; };
+		6627060F8648766182D2B8A4064B0F9C /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Source/Shared/Keychain.swift; sourceTree = "<group>"; };
+		6D44FDF6C2FEDD94B8BC3BA81E745BE2 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
 		705219A5F844BA2142835620DE5FB7B4 /* Pods-Brewvite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Brewvite.modulemap"; sourceTree = "<group>"; };
-		7082A887C38E35693A0C542867C8ACF5 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		726D032B1B589695AF49A659DB7794C1 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		741AB08D699D2EE893EA3638B1C4DA96 /* Tips.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tips.swift; path = Source/Shared/Endpoints/Tips.swift; sourceTree = "<group>"; };
 		74484178D2B7CC7044B0251EB67A31CB /* Pods-Brewvite-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Brewvite-acknowledgements.plist"; sourceTree = "<group>"; };
-		78041E1F84AD3D431738E4CF1062ADD8 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
-		862ABE3C3B255672014E61388A0CAF09 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
-		8693D3E9565F44308BB0CAA36319C720 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		7AD92BB4058EA79D417E3A28A8F609B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ADC5414456B68ABD8269199A7505C16 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		7C7CA7893BEA728D20E60253ADF8C266 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		80E8068F150E83CAEBE1F763E2051DAE /* AuthorizationViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AuthorizationViewController.xib; path = Source/iOS/AuthorizationViewController.xib; sourceTree = "<group>"; };
+		83BCEB4A38F58A6316A6D63A4D1FDE10 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
 		871852F633A01BCC455B36234B770FDF /* Pods-Brewvite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Brewvite-umbrella.h"; sourceTree = "<group>"; };
-		8DD814AA5A61EF1BC53D27C36C5E7864 /* BAFluidView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAFluidView-prefix.pch"; sourceTree = "<group>"; };
+		8823B7F111C0364F85D4FD855CAF7FA8 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		88B8F96EFE9B778B841E26F668029C12 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		8C60DCDB0F746671D52359A99AB76F81 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		8D3FF6AAA98DE6F3777354207ABB7E03 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
 		8F549370C71903966AC294BA59B11D75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93200819D8DDABBFC47AC14DED54EC58 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
-		9577052AE3C34BB4F2651A89E26792D6 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
-		98237589695F03149E60C6E93DD3FBE8 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
-		98862778FCD1A0FCE0E1222484DE6AD3 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		9A40A65E6EFEEEFB8ECE19091CD90148 /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
-		A1EFEAB6AC7F0829B504FC906C692D93 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
-		A3BA0DF5763B39821F467BB2147DB453 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A47CFEF762AC46660F96B70D6BA4B544 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
-		A753494DC13F2A3C99DCD9B61D05E08A /* BAFluidView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAFluidView-umbrella.h"; sourceTree = "<group>"; };
+		93ADB8507F3EECD59A282245FC0DBBCB /* QuadratTouch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuadratTouch-umbrella.h"; sourceTree = "<group>"; };
+		95B355F705B313558B7F43847FA04CBD /* Events.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Events.swift; path = Source/Shared/Endpoints/Events.swift; sourceTree = "<group>"; };
+		960EE6E5436F819D20C477C38874C2BC /* Photos.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Photos.swift; path = Source/Shared/Endpoints/Photos.swift; sourceTree = "<group>"; };
+		9BEBDD05923F8698C6D03B73DCFDB9FE /* QuadratTouch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = QuadratTouch.modulemap; sourceTree = "<group>"; };
+		9EAA3381A33D723469DC876B58455C4F /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		9EBF028D306536AC440028121AA0BEA3 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		9F28985BE661D33B0BC22974F6F5F6BC /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Source/Shared/Logger.swift; sourceTree = "<group>"; };
+		A1DCAF4679ECC5B54C92AEC40B97F207 /* BAFluidView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BAFluidView.xcconfig; sourceTree = "<group>"; };
+		A39C3903CFD7794706AFE66F1F695649 /* Authorizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authorizer.swift; path = Source/Shared/Authorizer.swift; sourceTree = "<group>"; };
+		A8193803C210CE3384E4555922C0305F /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
 		A883E2C28FCD33A1C9F35CCA1836D3B2 /* Pods-BrewviteTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BrewviteTests.modulemap"; sourceTree = "<group>"; };
-		B13A3CFB9BD0501BDA915C1C6E3136CB /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
-		B178EA4D2B5CEE2AD17E3CBF3A64B158 /* Pods_Brewvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brewvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2C218C731AED51E34B22131FC8E7484 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE0120E4EC47B978F34343418287087 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		ABF33F8DD99183FECB79E130F84D7187 /* BAFluidView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAFluidView-umbrella.h"; sourceTree = "<group>"; };
+		AD661A11351FEC2BBD9CD6B5EF061059 /* Users.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Source/Shared/Endpoints/Users.swift; sourceTree = "<group>"; };
+		AD8A934E827E82A1CAD2E22B22B4F19D /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		AE6160F7B34F8D75C00D15E025E61535 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B12A7032D7E5EDFAC45FAA7DFD6C217C /* BAFluidView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BAFluidView.modulemap; sourceTree = "<group>"; };
+		B3A90CC74BD7FC4B3D8D3507356A29A1 /* PageUpdates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageUpdates.swift; path = Source/Shared/Endpoints/PageUpdates.swift; sourceTree = "<group>"; };
+		B7DC88D7AB713474774901AFA897EEBE /* Settings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = Source/Shared/Endpoints/Settings.swift; sourceTree = "<group>"; };
+		BA53A896DF59A4015CAD0B345AF4BD82 /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BAD005A60215DD36DDC8DB2FFCC136F4 /* Pods-BrewviteTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BrewviteTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		BB476DF92866D24852179363A5B4E12F /* BAFluidView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BAFluidView.m; path = Pod/Classes/BAFluidView.m; sourceTree = "<group>"; };
 		BB87B3012903F0AD123DABCBD7385A07 /* Pods-BrewviteTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BrewviteTests-dummy.m"; sourceTree = "<group>"; };
-		C106CCAE8FB0E1C5DF2B203C46A2363E /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		C1598215A7E500DF5EDE205E079ED1DD /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		C2D210FFA320091237C488B49D673211 /* QuadratTouch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuadratTouch.xcconfig; sourceTree = "<group>"; };
 		C3495F4EAFAE559639182AF54381E3CC /* Pods-Brewvite-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Brewvite-resources.sh"; sourceTree = "<group>"; };
-		CA86FD48F9AAC68F581B0A943A3BC290 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
-		CE3DB1DD0660A62509111E2FF956C5DD /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
-		CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D349CFFCD12D22EDF4986067EAFCCDB8 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		C35B98A54FFBA5D87DBC6809F7C02494 /* UIColor+ColorWithHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ColorWithHex.m"; path = "Pod/Classes/UIColor+ColorWithHex.m"; sourceTree = "<group>"; };
+		C3AB8A07C6D514A7EB5956A93F73180D /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48571F0B2654B9F89A1FC9D9F2C5CF5 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		C68351487A8311D1E6DA89EFE99130A3 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+		CA9ED2F67F3878CBFA6D9E096E76DE8A /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Shared/Session.swift; sourceTree = "<group>"; };
+		CE8277DD60FCADB8888ECFD713C2E360 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D0A7880AB7F7390CD48D3281BAC932E6 /* Authorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authorization.swift; path = Source/iOS/Authorization.swift; sourceTree = "<group>"; };
 		D3F1337D97953798D4B8A4EDE5476740 /* Pods-BrewviteTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BrewviteTests-frameworks.sh"; sourceTree = "<group>"; };
 		D40C3ADE1DF913B30FA4B393D5C35C68 /* Pods-BrewviteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BrewviteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D56A4540C0488CBDFFF0EE7F10C6E54C /* OauthErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OauthErrors.swift; path = Source/Shared/OauthErrors.swift; sourceTree = "<group>"; };
 		DBF8E2F6B3FE2F98D03B1870A620F524 /* Pods-Brewvite-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Brewvite-frameworks.sh"; sourceTree = "<group>"; };
-		DC5B231B6C84FF5F542FC4EA8D3DEFF3 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
 		DE2FDDFBBF1DE76F9DFFE33BD8EA6DF0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E261442C6EC565886F8AF3F3E4DFC17E /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+		DE77789F83128010182D9B70C937A7BD /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		E4E446EB438968B2652EFBBD7CA0312A /* Pods-Brewvite-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Brewvite-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E53A6942A9069B83431A52DDA6A1F794 /* BAFluidView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAFluidView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAE051E44C11ACB0C37CEC5A97C3357E /* BAFluidView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAFluidView.h; path = Pod/Classes/BAFluidView.h; sourceTree = "<group>"; };
-		ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F5ED6215A52E7F2FE06C92D510FF4927 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F89C98FB8E792760A870D5D60A9996CD /* BAFluidView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BAFluidView.modulemap; sourceTree = "<group>"; };
-		FBC9846D6C0419432064B845B94E08F4 /* BAFluidView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BAFluidView.xcconfig; sourceTree = "<group>"; };
-		FBD77CEAC102D1EA5EF75421CD5647C1 /* Pods_BrewviteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewviteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E641783EF1C99E5CFE5BF0F2F026DDF2 /* QuadratTouch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuadratTouch-dummy.m"; sourceTree = "<group>"; };
+		EA19BBC6746284BC7249CD44C8CFA2A9 /* Pods_BrewviteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewviteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABE7826020F809094B9D7DB85510CAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB43096714D22F004F2A4E47DC27A075 /* BAFluidView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BAFluidView-dummy.m"; sourceTree = "<group>"; };
+		F7D85F940B76DDAD0E973554CB930B63 /* Pods_Brewvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brewvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9B41B2C49368F51E709D9E17D7DA1C4 /* QuadratTouch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuadratTouch.h; path = Source/QuadratTouch/QuadratTouch.h; sourceTree = "<group>"; };
+		FACBAADD31C563347D523BEE5EAA8F02 /* Specials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Specials.swift; path = Source/Shared/Endpoints/Specials.swift; sourceTree = "<group>"; };
+		FAD0B5624E43847A32814AB5A85D5BA7 /* QuadratTouch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuadratTouch-prefix.pch"; sourceTree = "<group>"; };
+		FAE8002ADDEFAF183BC42AE57104109B /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		FDBD7DAD882AF7366C92D41C2F7C8B3C /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		07E4C663CFDAED9DD3BDE0E021717808 /* Frameworks */ = {
+		16ED463E54AF1F10426B8D91FFC05D4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B1A768A11C49885F70C35F2989E73B /* Foundation.framework in Frameworks */,
+				78E6E6150074582726E9536A404D12B7 /* Foundation.framework in Frameworks */,
+				0D8E9B886F47889906D3F6482ABBF219 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,11 +291,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2778F512B09DCC15955C763BDB7B2D60 /* Frameworks */ = {
+		7FA595789BE4284A087EE071D904D957 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAA6A7284950B065EAC6123E13EBD602 /* Foundation.framework in Frameworks */,
+				59867AE27C0BAA645E340A8503567D18 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C305B5D2BB9E5BB1CA0B17ADB3B84561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D39F8F4B538EEE27FAF9D1D43E4F691 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,94 +317,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		047D5DE866F01F916991F1B2EF0DCAF3 /* Default */ = {
+		0F8DFE70CA56FD31F9A17E35F0A5F0F0 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				9577052AE3C34BB4F2651A89E26792D6 /* Chameleon.h */,
-				E261442C6EC565886F8AF3F3E4DFC17E /* Chameleon_.h */,
-				2A6F6653BD0A00D0E4B687683F30550A /* Chameleon_.m */,
-				726D032B1B589695AF49A659DB7794C1 /* ChameleonConstants.h */,
-				93200819D8DDABBFC47AC14DED54EC58 /* ChameleonConstants.m */,
-				122F4758AE9148E7E11686B0350A64A6 /* ChameleonEnums.h */,
-				228F6A597779911E24CE35134525E068 /* ChameleonMacros.h */,
-				862ABE3C3B255672014E61388A0CAF09 /* NSArray+Chameleon.h */,
-				CA86FD48F9AAC68F581B0A943A3BC290 /* NSArray+Chameleon.m */,
-				8693D3E9565F44308BB0CAA36319C720 /* UIButton+Chameleon.h */,
-				4A5BEECC5969EA578C29505A3735050C /* UIButton+Chameleon.m */,
-				CE3DB1DD0660A62509111E2FF956C5DD /* UIColor+Chameleon.h */,
-				2F2E3B1FECE99517D445EF388E88E653 /* UIColor+Chameleon.m */,
-				98862778FCD1A0FCE0E1222484DE6AD3 /* UIColor+ChameleonPrivate.h */,
-				C106CCAE8FB0E1C5DF2B203C46A2363E /* UIColor+ChameleonPrivate.m */,
-				D349CFFCD12D22EDF4986067EAFCCDB8 /* UIImage+ChameleonPrivate.h */,
-				1DE7FB7065D3F108576A51259CDA11F2 /* UIImage+ChameleonPrivate.m */,
-				26DB7F7DF1459AA9CC74E6B39B4929ED /* UILabel+Chameleon.h */,
-				78041E1F84AD3D431738E4CF1062ADD8 /* UILabel+Chameleon.m */,
-				B13A3CFB9BD0501BDA915C1C6E3136CB /* UINavigationController+Chameleon.h */,
-				084CCE41BC2565BC103E079743D4DAD0 /* UINavigationController+Chameleon.m */,
-				39CFEF628FD680B1D0B1D7817C37EC8B /* UIView+ChameleonPrivate.h */,
-				7082A887C38E35693A0C542867C8ACF5 /* UIView+ChameleonPrivate.m */,
-				3C962534C780DA4FCD3661596711358B /* UIViewController+Chameleon.h */,
-				DC5B231B6C84FF5F542FC4EA8D3DEFF3 /* UIViewController+Chameleon.m */,
+				5F6B4383FC6B8F683FB056E30EC4B9BD /* ChameleonShorthand.swift */,
 			);
-			name = Default;
+			name = Swift;
 			sourceTree = "<group>";
 		};
-		111F7D6A969789A2209AA9AD4F3D0D0A /* Products */ = {
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E53A6942A9069B83431A52DDA6A1F794 /* BAFluidView.bundle */,
-				3EFA087CCA8AA435443EAF481D3D8518 /* BAFluidView.framework */,
-				F5ED6215A52E7F2FE06C92D510FF4927 /* ChameleonFramework.framework */,
-				B178EA4D2B5CEE2AD17E3CBF3A64B158 /* Pods_Brewvite.framework */,
-				FBD77CEAC102D1EA5EF75421CD5647C1 /* Pods_BrewviteTests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A9203A0FF197B8764CD853B6EE3A159E /* iOS */,
+				A88BE05248F3482BD05E4135A5519D3E /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		17A6E3388A6441C5C42D772C96960390 /* Support Files */ = {
+		47AB639E1FE2E75061864C886F0B4CD1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F89C98FB8E792760A870D5D60A9996CD /* BAFluidView.modulemap */,
-				FBC9846D6C0419432064B845B94E08F4 /* BAFluidView.xcconfig */,
-				3FA8557F7E864F2387E8FC216FE31580 /* BAFluidView-dummy.m */,
-				8DD814AA5A61EF1BC53D27C36C5E7864 /* BAFluidView-prefix.pch */,
-				A753494DC13F2A3C99DCD9B61D05E08A /* BAFluidView-umbrella.h */,
-				A3BA0DF5763B39821F467BB2147DB453 /* Info.plist */,
+				CDA5CF7924CA1549402BBE2279526D27 /* BAFluidView */,
+				4EA7522BB0D6FFB841DD2E6DB369C566 /* ChameleonFramework */,
+				808EE172A04F2D71EDEB5D9F26D78309 /* QuadratTouch */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/BAFluidView";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		4A55CECF102DAFA7DF97A3A4202421F6 /* ChameleonFramework */ = {
+		4EA7522BB0D6FFB841DD2E6DB369C566 /* ChameleonFramework */ = {
 			isa = PBXGroup;
 			children = (
-				047D5DE866F01F916991F1B2EF0DCAF3 /* Default */,
-				590BB10832FF0297BF3332CE21245A6B /* Support Files */,
-				D60F7A2338BAE6F297464D6AA5DFA63F /* Swift */,
+				797508D51F4F7FE02CEF02BA40523DBD /* Default */,
+				52865B5D7999CAAD58936E4F9231B34A /* Support Files */,
+				0F8DFE70CA56FD31F9A17E35F0A5F0F0 /* Swift */,
 			);
 			path = ChameleonFramework;
 			sourceTree = "<group>";
 		};
-		590BB10832FF0297BF3332CE21245A6B /* Support Files */ = {
+		52865B5D7999CAAD58936E4F9231B34A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				98237589695F03149E60C6E93DD3FBE8 /* ChameleonFramework.modulemap */,
-				0A62FA372BD7D841CC0A84A318498870 /* ChameleonFramework.xcconfig */,
-				A1EFEAB6AC7F0829B504FC906C692D93 /* ChameleonFramework-dummy.m */,
-				5873E7B23F6AD8C72B54E4D670796A1B /* ChameleonFramework-prefix.pch */,
-				9A40A65E6EFEEEFB8ECE19091CD90148 /* ChameleonFramework-umbrella.h */,
-				B2C218C731AED51E34B22131FC8E7484 /* Info.plist */,
+				C48571F0B2654B9F89A1FC9D9F2C5CF5 /* ChameleonFramework.modulemap */,
+				8D3FF6AAA98DE6F3777354207ABB7E03 /* ChameleonFramework.xcconfig */,
+				83BCEB4A38F58A6316A6D63A4D1FDE10 /* ChameleonFramework-dummy.m */,
+				C1598215A7E500DF5EDE205E079ED1DD /* ChameleonFramework-prefix.pch */,
+				BA53A896DF59A4015CAD0B345AF4BD82 /* ChameleonFramework-umbrella.h */,
+				5262099835093ED67F4C6885BD01E547 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ChameleonFramework";
+			sourceTree = "<group>";
+		};
+		5F56B118E4728CA1FF218AF84AACF93A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AD92BB4058EA79D417E3A28A8F609B9 /* Info.plist */,
+				9BEBDD05923F8698C6D03B73DCFDB9FE /* QuadratTouch.modulemap */,
+				C2D210FFA320091237C488B49D673211 /* QuadratTouch.xcconfig */,
+				E641783EF1C99E5CFE5BF0F2F026DDF2 /* QuadratTouch-dummy.m */,
+				FAD0B5624E43847A32814AB5A85D5BA7 /* QuadratTouch-prefix.pch */,
+				93ADB8507F3EECD59A282245FC0DBBCB /* QuadratTouch-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/QuadratTouch";
 			sourceTree = "<group>";
 		};
 		6A552E1C7ECA647E1CC31747F63EEE6C /* Targets Support Files */ = {
@@ -315,35 +390,135 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		797508D51F4F7FE02CEF02BA40523DBD /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				8C60DCDB0F746671D52359A99AB76F81 /* Chameleon.h */,
+				C68351487A8311D1E6DA89EFE99130A3 /* Chameleon_.h */,
+				88B8F96EFE9B778B841E26F668029C12 /* Chameleon_.m */,
+				9EAA3381A33D723469DC876B58455C4F /* ChameleonConstants.h */,
+				7C7CA7893BEA728D20E60253ADF8C266 /* ChameleonConstants.m */,
+				13BA7BFF8D2A55EA833F4AD3DD6C99C8 /* ChameleonEnums.h */,
+				AAE0120E4EC47B978F34343418287087 /* ChameleonMacros.h */,
+				1350C6333958D596279E25BE39519FE0 /* NSArray+Chameleon.h */,
+				6036D72561B170D4070FD83DB53108A9 /* NSArray+Chameleon.m */,
+				05F01FE6532DA6870DA6C374E42B00AE /* UIButton+Chameleon.h */,
+				1FBD2BB2CA5908C98455F85E4EC8729A /* UIButton+Chameleon.m */,
+				FDBD7DAD882AF7366C92D41C2F7C8B3C /* UIColor+Chameleon.h */,
+				2DB2918FA2C53E98EC76C8D1A3FEBA34 /* UIColor+Chameleon.m */,
+				49581D63994A475CCD07E1DC88F0383C /* UIColor+ChameleonPrivate.h */,
+				2F392D4EC7FAD2DA93BD0D1EF1DEA4CC /* UIColor+ChameleonPrivate.m */,
+				50FE4A522E65A3051F7B0E693B7CEE46 /* UIImage+ChameleonPrivate.h */,
+				DE77789F83128010182D9B70C937A7BD /* UIImage+ChameleonPrivate.m */,
+				A8193803C210CE3384E4555922C0305F /* UILabel+Chameleon.h */,
+				6D44FDF6C2FEDD94B8BC3BA81E745BE2 /* UILabel+Chameleon.m */,
+				8823B7F111C0364F85D4FD855CAF7FA8 /* UINavigationController+Chameleon.h */,
+				9EBF028D306536AC440028121AA0BEA3 /* UINavigationController+Chameleon.m */,
+				FAE8002ADDEFAF183BC42AE57104109B /* UIView+ChameleonPrivate.h */,
+				190875F7B13CEF525949804469A8610C /* UIView+ChameleonPrivate.m */,
+				AD8A934E827E82A1CAD2E22B22B4F19D /* UIViewController+Chameleon.h */,
+				163E02AC728D3B333DDCAEFB10611671 /* UIViewController+Chameleon.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				84E8FF773673C0160134BF104A862F4C /* Pods */,
-				111F7D6A969789A2209AA9AD4F3D0D0A /* Products */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				47AB639E1FE2E75061864C886F0B4CD1 /* Pods */,
+				AC21557B5CA6ED6E90C71A987DDFBB19 /* Products */,
 				6A552E1C7ECA647E1CC31747F63EEE6C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		84E8FF773673C0160134BF104A862F4C /* Pods */ = {
+		808EE172A04F2D71EDEB5D9F26D78309 /* QuadratTouch */ = {
 			isa = PBXGroup;
 			children = (
-				D802511188B7AD1AF948B3AA151E6492 /* BAFluidView */,
-				4A55CECF102DAFA7DF97A3A4202421F6 /* ChameleonFramework */,
+				D0A7880AB7F7390CD48D3281BAC932E6 /* Authorization.swift */,
+				5C6F859DC18A8F49CA7892AB04FFE809 /* AuthorizationViewController.swift */,
+				A39C3903CFD7794706AFE66F1F695649 /* Authorizer.swift */,
+				2C8E5123D15322D67BD8FE3948CE9FB5 /* Checkins.swift */,
+				57933DD24FD2E7A2B53B6C6273080F42 /* Configuration.swift */,
+				5AECB574B15593C65D3D7F6F92232E12 /* DataCache.swift */,
+				4F06C18D2237E96921B4D04F48BE8E7B /* Endpoint.swift */,
+				95B355F705B313558B7F43847FA04CBD /* Events.swift */,
+				6627060F8648766182D2B8A4064B0F9C /* Keychain.swift */,
+				5664B643427A4D05886961B6D6753864 /* Lists.swift */,
+				9F28985BE661D33B0BC22974F6F5F6BC /* Logger.swift */,
+				64110FFA4479956231478A2765BDF141 /* Multi.swift */,
+				41EAF2706EB3EF0765D244F35254EA0B /* NativeTouchAuthorizer.swift */,
+				0ADA45B46103DF76E4493D5A7CD4EB75 /* NetworkActivityIndicatorController.swift */,
+				D56A4540C0488CBDFFF0EE7F10C6E54C /* OauthErrors.swift */,
+				4AFBE47A2A5AA37EBDAFB459A88140BE /* Pages.swift */,
+				B3A90CC74BD7FC4B3D8D3507356A29A1 /* PageUpdates.swift */,
+				653EDD0F898461E80EB19343F0FBF47B /* Parameters.swift */,
+				960EE6E5436F819D20C477C38874C2BC /* Photos.swift */,
+				F9B41B2C49368F51E709D9E17D7DA1C4 /* QuadratTouch.h */,
+				27206A3C81CDFD0757CEDEB390ADEEB7 /* Request.swift */,
+				4F15FD43EA633C2A9D87D18F620B7314 /* Result.swift */,
+				CA9ED2F67F3878CBFA6D9E096E76DE8A /* Session.swift */,
+				B7DC88D7AB713474774901AFA897EEBE /* Settings.swift */,
+				FACBAADD31C563347D523BEE5EAA8F02 /* Specials.swift */,
+				0AC48C553D03DE8B64E9D9340583AD8E /* Task.swift */,
+				741AB08D699D2EE893EA3638B1C4DA96 /* Tips.swift */,
+				647656FA9F01A5EC0423968822E08124 /* TouchAuthorizer.swift */,
+				39720B8795BC6EF333BE8AD87DA25E56 /* Updates.swift */,
+				AD661A11351FEC2BBD9CD6B5EF061059 /* Users.swift */,
+				2844BC61CE3736752AAB69A963506020 /* VenueGroups.swift */,
+				6142503A1BB7D53DC4716E4F9358B9A5 /* Venues.swift */,
+				945735D4B3EAB9A2FC66B1F6065B3DD5 /* Resources */,
+				5F56B118E4728CA1FF218AF84AACF93A /* Support Files */,
 			);
-			name = Pods;
+			path = QuadratTouch;
 			sourceTree = "<group>";
 		};
-		A9203A0FF197B8764CD853B6EE3A159E /* iOS */ = {
+		945735D4B3EAB9A2FC66B1F6065B3DD5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */,
-				CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */,
-				0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */,
-				ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */,
+				80E8068F150E83CAEBE1F763E2051DAE /* AuthorizationViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A88BE05248F3482BD05E4135A5519D3E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC5414456B68ABD8269199A7505C16 /* CoreGraphics.framework */,
+				EABE7826020F809094B9D7DB85510CAB /* Foundation.framework */,
+				AE6160F7B34F8D75C00D15E025E61535 /* QuartzCore.framework */,
+				19B4C69769AAEB05320928BFF1CC18DA /* SystemConfiguration.framework */,
+				CE8277DD60FCADB8888ECFD713C2E360 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		A92C67DEC4575DDCF4E94C824682E4E0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B12A7032D7E5EDFAC45FAA7DFD6C217C /* BAFluidView.modulemap */,
+				A1DCAF4679ECC5B54C92AEC40B97F207 /* BAFluidView.xcconfig */,
+				EB43096714D22F004F2A4E47DC27A075 /* BAFluidView-dummy.m */,
+				4838578B430FC6254E2E1273CE4AF1AF /* BAFluidView-prefix.pch */,
+				ABF33F8DD99183FECB79E130F84D7187 /* BAFluidView-umbrella.h */,
+				0424F18FBF2B49FECC85147741C4C881 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BAFluidView";
+			sourceTree = "<group>";
+		};
+		AC21557B5CA6ED6E90C71A987DDFBB19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63952FC6DF6500D263CCFE738BD674D3 /* BAFluidView.bundle */,
+				61C022AB659929E6D088E18450F5A0CA /* BAFluidView.framework */,
+				C3AB8A07C6D514A7EB5956A93F73180D /* ChameleonFramework.framework */,
+				F7D85F940B76DDAD0E973554CB930B63 /* Pods_Brewvite.framework */,
+				EA19BBC6746284BC7249CD44C8CFA2A9 /* Pods_BrewviteTests.framework */,
+				17FF8BDF00395A941B107CAA592DE186 /* QuadratTouch.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C939DEADE7B582442AAD440E5D7AC251 /* Pods-Brewvite */ = {
@@ -364,12 +539,16 @@
 			path = "Target Support Files/Pods-Brewvite";
 			sourceTree = "<group>";
 		};
-		D60F7A2338BAE6F297464D6AA5DFA63F /* Swift */ = {
+		CDA5CF7924CA1549402BBE2279526D27 /* BAFluidView */ = {
 			isa = PBXGroup;
 			children = (
-				A47CFEF762AC46660F96B70D6BA4B544 /* ChameleonShorthand.swift */,
+				186F673639F4580D8AB12012C5CA0304 /* BAFluidView.h */,
+				2141F31A166FA9237F74290B58ADD50A /* BAFluidView.m */,
+				38EBD3E84086053E18DE4B623DC14790 /* UIColor+ColorWithHex.h */,
+				C35B98A54FFBA5D87DBC6809F7C02494 /* UIColor+ColorWithHex.m */,
+				A92C67DEC4575DDCF4E94C824682E4E0 /* Support Files */,
 			);
-			name = Swift;
+			path = BAFluidView;
 			sourceTree = "<group>";
 		};
 		D7D85999494156BE0388108E762A3211 /* Pods-BrewviteTests */ = {
@@ -390,21 +569,17 @@
 			path = "Target Support Files/Pods-BrewviteTests";
 			sourceTree = "<group>";
 		};
-		D802511188B7AD1AF948B3AA151E6492 /* BAFluidView */ = {
-			isa = PBXGroup;
-			children = (
-				EAE051E44C11ACB0C37CEC5A97C3357E /* BAFluidView.h */,
-				BB476DF92866D24852179363A5B4E12F /* BAFluidView.m */,
-				55A482B5553C61AB47EDE838EBBDCAEA /* UIColor+ColorWithHex.h */,
-				6F942CF0281EE2F56E514E426B598512 /* UIColor+ColorWithHex.m */,
-				17A6E3388A6441C5C42D772C96960390 /* Support Files */,
-			);
-			path = BAFluidView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1117ED71E2889B945BCAB81B96245667 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA1F310E675494977A867A22393FA4D /* Pods-BrewviteTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3608CA4FF19A207D69A04522F449D394 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,11 +590,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B34AE584EDF1C6D440FE69796B2AE844 /* Headers */ = {
+		691E74A404F11D9833B24FD11DB1DD05 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86F73C99F14DDD33E838AFB7E24D5A56 /* Pods-Brewvite-umbrella.h in Headers */,
+				86C32F9373B5A42B39B5C8AF6BB355BE /* QuadratTouch-umbrella.h in Headers */,
+				5BA9894943F1768B062671B451D3FC7B /* QuadratTouch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		914F3BEEDC042FD8369D236F362D5E5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB69F84F6265AC41C44DE4F149A59019 /* Pods-Brewvite-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,14 +629,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5530BB78352B81720AD7D6BFA973768 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31F1149E2213FFA6B05D6F66CD6A2757 /* Pods-BrewviteTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -470,7 +646,7 @@
 			);
 			name = "BAFluidView-BAFluidView";
 			productName = "BAFluidView-BAFluidView";
-			productReference = E53A6942A9069B83431A52DDA6A1F794 /* BAFluidView.bundle */;
+			productReference = 63952FC6DF6500D263CCFE738BD674D3 /* BAFluidView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		41CFA64B516ED9C08853FCDF6BC11F03 /* BAFluidView */ = {
@@ -489,26 +665,25 @@
 			);
 			name = BAFluidView;
 			productName = BAFluidView;
-			productReference = 3EFA087CCA8AA435443EAF481D3D8518 /* BAFluidView.framework */;
+			productReference = 61C022AB659929E6D088E18450F5A0CA /* BAFluidView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4C37FC723DEA55FFB336C00C4388FA77 /* Pods-BrewviteTests */ = {
+		42DA8113B141A43744881D86707DECC5 /* QuadratTouch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17EAF272B6A5EEF568703D796DD448FC /* Build configuration list for PBXNativeTarget "Pods-BrewviteTests" */;
+			buildConfigurationList = 684EA085E678DA04C4FE71434E2D69E8 /* Build configuration list for PBXNativeTarget "QuadratTouch" */;
 			buildPhases = (
-				3C883DF373BFADED7F5E4B92F9DE22CF /* Sources */,
-				2778F512B09DCC15955C763BDB7B2D60 /* Frameworks */,
-				F5530BB78352B81720AD7D6BFA973768 /* Headers */,
+				05AC204D38CC93054B4C0BBD36A2F052 /* Sources */,
+				16ED463E54AF1F10426B8D91FFC05D4D /* Frameworks */,
+				691E74A404F11D9833B24FD11DB1DD05 /* Headers */,
+				4CF6AFC30AF7A5034BBDDB3D0BC88E6D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EAB8ACDABFCDC5594621D9272D4173A1 /* PBXTargetDependency */,
-				195C88AE8A4B145B3C840C3B612FAC05 /* PBXTargetDependency */,
 			);
-			name = "Pods-BrewviteTests";
-			productName = "Pods-BrewviteTests";
-			productReference = FBD77CEAC102D1EA5EF75421CD5647C1 /* Pods_BrewviteTests.framework */;
+			name = QuadratTouch;
+			productName = QuadratTouch;
+			productReference = 17FF8BDF00395A941B107CAA592DE186 /* QuadratTouch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9883DF06E8D2D66F932D42F0FCA1F6E9 /* ChameleonFramework */ = {
@@ -525,26 +700,47 @@
 			);
 			name = ChameleonFramework;
 			productName = ChameleonFramework;
-			productReference = F5ED6215A52E7F2FE06C92D510FF4927 /* ChameleonFramework.framework */;
+			productReference = C3AB8A07C6D514A7EB5956A93F73180D /* ChameleonFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CDDB622854B77E3FF2577DF9FD3A6083 /* Pods-Brewvite */ = {
+		B41A78E9682E8A978C68F9C1981995ED /* Pods-BrewviteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77A425774791F85D27DB139FCBF1D151 /* Build configuration list for PBXNativeTarget "Pods-Brewvite" */;
+			buildConfigurationList = AC18DBECB264054D99D06B04397107FA /* Build configuration list for PBXNativeTarget "Pods-BrewviteTests" */;
 			buildPhases = (
-				69CAB1607C8D3C49473AA7A4DA9A27E3 /* Sources */,
-				07E4C663CFDAED9DD3BDE0E021717808 /* Frameworks */,
-				B34AE584EDF1C6D440FE69796B2AE844 /* Headers */,
+				48C997E4F3A93E6BC3416236D9577CF2 /* Sources */,
+				7FA595789BE4284A087EE071D904D957 /* Frameworks */,
+				1117ED71E2889B945BCAB81B96245667 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C52D8E08287A7152718349FC7F0DFCD5 /* PBXTargetDependency */,
-				8CC2CFB7AA780FF4C371F177785A9B79 /* PBXTargetDependency */,
+				1241C27C43690EC6BD506DE8BD1321F4 /* PBXTargetDependency */,
+				3C3284278DB329E3134D6B3D5009297A /* PBXTargetDependency */,
+				AD20B53DEDD12C847F1452C9824D8969 /* PBXTargetDependency */,
+			);
+			name = "Pods-BrewviteTests";
+			productName = "Pods-BrewviteTests";
+			productReference = EA19BBC6746284BC7249CD44C8CFA2A9 /* Pods_BrewviteTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D957274371EDEC5AA287F92845ED8645 /* Pods-Brewvite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F206C733022E1C8391A90CB71E8F730 /* Build configuration list for PBXNativeTarget "Pods-Brewvite" */;
+			buildPhases = (
+				447A025F11A5FF762B5E81BB5C30FA81 /* Sources */,
+				C305B5D2BB9E5BB1CA0B17ADB3B84561 /* Frameworks */,
+				914F3BEEDC042FD8369D236F362D5E5F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C66DFC3BCB32283F2AF6E06F8856E314 /* PBXTargetDependency */,
+				94890B2D62EBD2CCB5F85B9ED2B08E05 /* PBXTargetDependency */,
+				68D8C75FA6B053498D05565DF5C2FD6D /* PBXTargetDependency */,
 			);
 			name = "Pods-Brewvite";
 			productName = "Pods-Brewvite";
-			productReference = B178EA4D2B5CEE2AD17E3CBF3A64B158 /* Pods_Brewvite.framework */;
+			productReference = F7D85F940B76DDAD0E973554CB930B63 /* Pods_Brewvite.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -564,15 +760,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 111F7D6A969789A2209AA9AD4F3D0D0A /* Products */;
+			productRefGroup = AC21557B5CA6ED6E90C71A987DDFBB19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				41CFA64B516ED9C08853FCDF6BC11F03 /* BAFluidView */,
 				26CF5D844007F2F83341C41BBB0A4FEC /* BAFluidView-BAFluidView */,
 				9883DF06E8D2D66F932D42F0FCA1F6E9 /* ChameleonFramework */,
-				CDDB622854B77E3FF2577DF9FD3A6083 /* Pods-Brewvite */,
-				4C37FC723DEA55FFB336C00C4388FA77 /* Pods-BrewviteTests */,
+				D957274371EDEC5AA287F92845ED8645 /* Pods-Brewvite */,
+				B41A78E9682E8A978C68F9C1981995ED /* Pods-BrewviteTests */,
+				42DA8113B141A43744881D86707DECC5 /* QuadratTouch */,
 			);
 		};
 /* End PBXProject section */
@@ -593,9 +790,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CF6AFC30AF7A5034BBDDB3D0BC88E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559484D152EF5E58C0A006533832C7C7 /* AuthorizationViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		05AC204D38CC93054B4C0BBD36A2F052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC7A7329DB1E9DA386B9CE88C3713DE /* Authorization.swift in Sources */,
+				94672909FA7EF09A9DFEF9BE1EBB952F /* AuthorizationViewController.swift in Sources */,
+				6D87ABE20F3FB56310AA251163A6BD7B /* Authorizer.swift in Sources */,
+				948E91D06648BFDBDBEAD3EE901005EC /* Checkins.swift in Sources */,
+				FADF54354D84644D7941C56C1328100B /* Configuration.swift in Sources */,
+				80CB366F3DDD73C064DD63F1AE8522FC /* DataCache.swift in Sources */,
+				9EA26C308FAD611E063AC8A5545F0155 /* Endpoint.swift in Sources */,
+				95545EFEF9A5434B515E6EA0D4F43116 /* Events.swift in Sources */,
+				C36DB4D80DF50F331E7C1714E75F3AE0 /* Keychain.swift in Sources */,
+				233B2A94B5C3FC2DB0676EF0D501560B /* Lists.swift in Sources */,
+				F3E7A1F4E1CB36A6EC298A188924A646 /* Logger.swift in Sources */,
+				04EB893E677EE2B670FA09911B193310 /* Multi.swift in Sources */,
+				9B240D99610FFBAE4D25C1CD47E42C0E /* NativeTouchAuthorizer.swift in Sources */,
+				D14E06E75DE7F710292BB77E485F97BD /* NetworkActivityIndicatorController.swift in Sources */,
+				0651CDE566F7D0C5C75FEAA674B7C8EE /* OauthErrors.swift in Sources */,
+				BE5CFD10EAE139BE860F7D29EC9D03AB /* Pages.swift in Sources */,
+				3316609F0E4E90CB57C5AE5247077A0E /* PageUpdates.swift in Sources */,
+				6A52970C45D976F63A5440468880EC97 /* Parameters.swift in Sources */,
+				7CBCC2C964C43D9142612638AC155C54 /* Photos.swift in Sources */,
+				C65A5116075E951D9990F1F282E06E45 /* QuadratTouch-dummy.m in Sources */,
+				9093524B4ED43390360DDA648564A177 /* Request.swift in Sources */,
+				E2A2E1A657E30855D359AB151A8A3938 /* Result.swift in Sources */,
+				0FB32A7A3B149EA043E07D78550638FD /* Session.swift in Sources */,
+				C841696AA093FF17C6F012D417CF4631 /* Settings.swift in Sources */,
+				3025ADA3E1C6788DE1D8C1AF63A16614 /* Specials.swift in Sources */,
+				0DDE0D71E427A448C1D9AAD4DFB9E6C5 /* Task.swift in Sources */,
+				992C3CFF412FF378F30A8E0BDF70B520 /* Tips.swift in Sources */,
+				B7BC8DF32A8020EF691C0A4E327FCBD4 /* TouchAuthorizer.swift in Sources */,
+				301539B16198264B6401E006010BE9C9 /* Updates.swift in Sources */,
+				2FA5FC86665BA9D90A6C135204B632A6 /* Users.swift in Sources */,
+				42A09C10BCA125EEAE85F7171E615ABC /* VenueGroups.swift in Sources */,
+				4AB75E12306C09D1ED6DD831FC664EB4 /* Venues.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2A492E3D81D41BB4E1E66F77266BE1B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -603,11 +847,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C883DF373BFADED7F5E4B92F9DE22CF /* Sources */ = {
+		447A025F11A5FF762B5E81BB5C30FA81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F88736AF4D580F285C6A3B4585602BE8 /* Pods-BrewviteTests-dummy.m in Sources */,
+				AB905EFF90E8A52B7D526A012F44EDFD /* Pods-Brewvite-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C997E4F3A93E6BC3416236D9577CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A8ED584CCDC590E04F5075E4FED56B /* Pods-BrewviteTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,14 +883,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69CAB1607C8D3C49473AA7A4DA9A27E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				294755BCE2D342579BDBA7BB14CCF577 /* Pods-Brewvite-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C779F785297C60E0D16F285EAE0ECBC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -652,17 +896,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		195C88AE8A4B145B3C840C3B612FAC05 /* PBXTargetDependency */ = {
+		1241C27C43690EC6BD506DE8BD1321F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ChameleonFramework;
-			target = 9883DF06E8D2D66F932D42F0FCA1F6E9 /* ChameleonFramework */;
-			targetProxy = 6599AB0B6B8BD42DCBB046309C3EAF1F /* PBXContainerItemProxy */;
+			name = BAFluidView;
+			target = 41CFA64B516ED9C08853FCDF6BC11F03 /* BAFluidView */;
+			targetProxy = 91422A279E014A8460B8A320C65027BE /* PBXContainerItemProxy */;
 		};
-		8CC2CFB7AA780FF4C371F177785A9B79 /* PBXTargetDependency */ = {
+		3C3284278DB329E3134D6B3D5009297A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChameleonFramework;
 			target = 9883DF06E8D2D66F932D42F0FCA1F6E9 /* ChameleonFramework */;
-			targetProxy = 6EB605389E1C665D5780E56AD7283B08 /* PBXContainerItemProxy */;
+			targetProxy = F17E9ABEB2B61FB9348384DC37F0D3AA /* PBXContainerItemProxy */;
+		};
+		68D8C75FA6B053498D05565DF5C2FD6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuadratTouch;
+			target = 42DA8113B141A43744881D86707DECC5 /* QuadratTouch */;
+			targetProxy = FC91A1726A7FF775C1A6A3B24E35D203 /* PBXContainerItemProxy */;
+		};
+		94890B2D62EBD2CCB5F85B9ED2B08E05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChameleonFramework;
+			target = 9883DF06E8D2D66F932D42F0FCA1F6E9 /* ChameleonFramework */;
+			targetProxy = 33DCDF659E0A4DC5F5EDCC2161CAC4FE /* PBXContainerItemProxy */;
+		};
+		AD20B53DEDD12C847F1452C9824D8969 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuadratTouch;
+			target = 42DA8113B141A43744881D86707DECC5 /* QuadratTouch */;
+			targetProxy = E6097D7A032A7F697B45FA291513417B /* PBXContainerItemProxy */;
 		};
 		BCC6215FCD52930AD7CD894FF6365947 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -670,21 +932,73 @@
 			target = 26CF5D844007F2F83341C41BBB0A4FEC /* BAFluidView-BAFluidView */;
 			targetProxy = D4D1DA03BA8116F7021B98C2398C286B /* PBXContainerItemProxy */;
 		};
-		C52D8E08287A7152718349FC7F0DFCD5 /* PBXTargetDependency */ = {
+		C66DFC3BCB32283F2AF6E06F8856E314 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BAFluidView;
 			target = 41CFA64B516ED9C08853FCDF6BC11F03 /* BAFluidView */;
-			targetProxy = CE45840EA9DD67B9FE1446123E25592B /* PBXContainerItemProxy */;
-		};
-		EAB8ACDABFCDC5594621D9272D4173A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BAFluidView;
-			target = 41CFA64B516ED9C08853FCDF6BC11F03 /* BAFluidView */;
-			targetProxy = 1DEDA24CABFBDA1B00C3B412ACB78C3A /* PBXContainerItemProxy */;
+			targetProxy = 7B1A0024044EF83ED85BB573FE3ED83B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1C0110A1C04CC3D8A019AD97FFD844B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D210FFA320091237C488B49D673211 /* QuadratTouch.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QuadratTouch/QuadratTouch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuadratTouch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QuadratTouch/QuadratTouch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = QuadratTouch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D2825695039E67B8EF7FE917CBA8A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40C3ADE1DF913B30FA4B393D5C35C68 /* Pods-BrewviteTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BrewviteTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BrewviteTests/Pods-BrewviteTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BrewviteTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -726,7 +1040,7 @@
 		};
 		5D685E9DEC4F45520DF9D89727BA3BAA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBC9846D6C0419432064B845B94E08F4 /* BAFluidView.xcconfig */;
+			baseConfigurationReference = A1DCAF4679ECC5B54C92AEC40B97F207 /* BAFluidView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = BAFluidView;
@@ -770,9 +1084,37 @@
 			};
 			name = Release;
 		};
+		7A255299785FDACF08ED6CEC5426E4B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D210FFA320091237C488B49D673211 /* QuadratTouch.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QuadratTouch/QuadratTouch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuadratTouch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QuadratTouch/QuadratTouch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = QuadratTouch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		829D42EE73AE6690045BC8EB2F9ECF2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBC9846D6C0419432064B845B94E08F4 /* BAFluidView.xcconfig */;
+			baseConfigurationReference = A1DCAF4679ECC5B54C92AEC40B97F207 /* BAFluidView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -799,7 +1141,7 @@
 		};
 		8D886E82234808C75A705ED0F653B552 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A62FA372BD7D841CC0A84A318498870 /* ChameleonFramework.xcconfig */;
+			baseConfigurationReference = 8D3FF6AAA98DE6F3777354207ABB7E03 /* ChameleonFramework.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -827,7 +1169,7 @@
 		};
 		B8C602C2F4E9ADBC806D595FBF938D40 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBC9846D6C0419432064B845B94E08F4 /* BAFluidView.xcconfig */;
+			baseConfigurationReference = A1DCAF4679ECC5B54C92AEC40B97F207 /* BAFluidView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = BAFluidView;
@@ -837,7 +1179,91 @@
 			};
 			name = Release;
 		};
-		BCB415064D6122A62A6F9F6D853AE4E5 /* Debug */ = {
+		BCC4921EA2D85B7464F198866357F96F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1DCAF4679ECC5B54C92AEC40B97F207 /* BAFluidView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BAFluidView/BAFluidView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BAFluidView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BAFluidView/BAFluidView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BAFluidView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CBF0C6FCBF983827FCB1E60BDBA61A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D3FF6AAA98DE6F3777354207ABB7E03 /* ChameleonFramework.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ChameleonFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D98860C3B2672EE04180A6191126F5FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27EC8FE474B86C3B8BF8AE2600048443 /* Pods-BrewviteTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BrewviteTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BrewviteTests/Pods-BrewviteTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BrewviteTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E7217833EB74EC6535B6DFA15AE2E412 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 472F40242DC94652034260D6FAF8628B /* Pods-Brewvite.debug.xcconfig */;
 			buildSettings = {
@@ -868,122 +1294,7 @@
 			};
 			name = Debug;
 		};
-		BCC4921EA2D85B7464F198866357F96F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBC9846D6C0419432064B845B94E08F4 /* BAFluidView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BAFluidView/BAFluidView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BAFluidView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BAFluidView/BAFluidView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BAFluidView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CBF0C6FCBF983827FCB1E60BDBA61A80 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A62FA372BD7D841CC0A84A318498870 /* ChameleonFramework.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ChameleonFramework;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EA054DAF08A110D919CE10DAB27652D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27EC8FE474B86C3B8BF8AE2600048443 /* Pods-BrewviteTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BrewviteTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BrewviteTests/Pods-BrewviteTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BrewviteTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F216EA27C902B0B34078C36D95261CAA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D40C3ADE1DF913B30FA4B393D5C35C68 /* Pods-BrewviteTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BrewviteTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BrewviteTests/Pods-BrewviteTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BrewviteTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F32B4709834CBFC2F4B02D9C40BDFB79 /* Release */ = {
+		F6454986624D8A7B8197CF078A9F00BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15213BDE5DA728C6E12B6D798D89EDB3 /* Pods-Brewvite.release.xcconfig */;
 			buildSettings = {
@@ -1016,15 +1327,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17EAF272B6A5EEF568703D796DD448FC /* Build configuration list for PBXNativeTarget "Pods-BrewviteTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F216EA27C902B0B34078C36D95261CAA /* Debug */,
-				EA054DAF08A110D919CE10DAB27652D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2364880EBFD15F78DCC14A014A050011 /* Build configuration list for PBXNativeTarget "BAFluidView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1043,11 +1345,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77A425774791F85D27DB139FCBF1D151 /* Build configuration list for PBXNativeTarget "Pods-Brewvite" */ = {
+		5F206C733022E1C8391A90CB71E8F730 /* Build configuration list for PBXNativeTarget "Pods-Brewvite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BCB415064D6122A62A6F9F6D853AE4E5 /* Debug */,
-				F32B4709834CBFC2F4B02D9C40BDFB79 /* Release */,
+				E7217833EB74EC6535B6DFA15AE2E412 /* Debug */,
+				F6454986624D8A7B8197CF078A9F00BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		684EA085E678DA04C4FE71434E2D69E8 /* Build configuration list for PBXNativeTarget "QuadratTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A255299785FDACF08ED6CEC5426E4B6 /* Debug */,
+				1C0110A1C04CC3D8A019AD97FFD844B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1057,6 +1368,15 @@
 			buildConfigurations = (
 				5D685E9DEC4F45520DF9D89727BA3BAA /* Debug */,
 				B8C602C2F4E9ADBC806D595FBF938D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC18DBECB264054D99D06B04397107FA /* Build configuration list for PBXNativeTarget "Pods-BrewviteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D2825695039E67B8EF7FE917CBA8A05 /* Debug */,
+				D98860C3B2672EE04180A6191126F5FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

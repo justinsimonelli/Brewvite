@@ -3,13 +3,16 @@ PODS:
   - ChameleonFramework/Default (2.0.4)
   - ChameleonFramework/Swift (2.0.4):
     - ChameleonFramework/Default
+  - QuadratTouch (1.1.1)
 
 DEPENDENCIES:
   - BAFluidView
   - ChameleonFramework/Swift
+  - QuadratTouch (>= 1.0)
 
 SPEC CHECKSUMS:
   BAFluidView: d43890546d372d1f1b47cc12991ab5b257322f23
   ChameleonFramework: 5abe69b1f2a6cc79c3c435fcd9d3d855748225ee
+  QuadratTouch: 296d83c63a4328f6f40af9fc728fe24f0e3b00d4
 
 COCOAPODS: 0.39.0

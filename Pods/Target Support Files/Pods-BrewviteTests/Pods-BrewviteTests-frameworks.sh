@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-BrewviteTests/BAFluidView.framework"
   install_framework "Pods-BrewviteTests/ChameleonFramework.framework"
+  install_framework "Pods-BrewviteTests/QuadratTouch.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-BrewviteTests/BAFluidView.framework"
   install_framework "Pods-BrewviteTests/ChameleonFramework.framework"
+  install_framework "Pods-BrewviteTests/QuadratTouch.framework"
 fi
