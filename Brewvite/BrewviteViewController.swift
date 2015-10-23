@@ -163,6 +163,7 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
             switch selectedAction!{
             case ShareData.sharedInstance.TRANSITION_ACTIONS.date:
                 print("date")
+                dateLabel.adjustsFontSizeToFitWidth = true
                 dateLabel.text = generateButtonTitleForDate(ShareData.sharedInstance.selectedDate!)
                 dateButton.hidden = true
                 dateLabel.hidden = false
@@ -170,6 +171,7 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
                 print("invites")
             case ShareData.sharedInstance.TRANSITION_ACTIONS.venues:
                 print("venues")
+                locationLabel.adjustsFontSizeToFitWidth = true
                 locationLabel.text = ShareData.sharedInstance.selectedVenue as? String
                 searchLocationsButton.hidden = true
                 locationLabel.hidden = false

@@ -14,9 +14,7 @@ typealias JSONParameters = [String: AnyObject]
 
 class LocationSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate, UISearchResultsUpdating {
     
-    var searchResults = [FoursquareSearchResult]()
     var searchController: UISearchController!
-
     var session: Session!
     var currentTask: Task?
     var location: CLLocation!
@@ -29,7 +27,6 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
     @IBAction func closeAction(sender: UIButton) {
         searchController.searchBar.resignFirstResponder()
         self.resignFirstResponder()
-        //ShareData.sharedInstance.selectedTransition = ShareData.sharedInstance.TRANSITION_ACTIONS.venues
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -62,10 +59,9 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("venueCell", forIndexPath: indexPath)
             
-        let item = self.venueItems![indexPath.row] as JSONParameters!
-        let venueInfo = item["venue"] as? JSONParameters
-        if venueInfo != nil {
-            cell.textLabel!.text = venueInfo!["name"] as? String
+        let venue = self.venueItems![indexPath.row] as JSONParameters!
+        if venue != nil {
+            cell.textLabel!.text = venue!["name"] as? String
         }
         return cell
     }
@@ -133,7 +129,6 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
         
         if( !strippedString.isEmpty && strippedString.characters.count > 1 )
         {
-            print(strippedString );
             currentTask?.cancel()
             var parameters = [Parameter.query:strippedString]
             parameters += self.location.parameters()
@@ -142,11 +137,7 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
                 if let response = result.response
                 {
                     if let venues = response["venues"] as? [JSONParameters]{
-                        for venue in venues
-                        {
-                            let name = venue["name"] as? String
-                            print("venue = \(name)")
-                        }
+                        self.venueItems = venues
                         self.searchResultsTable.reloadData()
                         
                     }

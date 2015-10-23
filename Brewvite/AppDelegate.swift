@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let client = Client(clientID:       "MMZADY2M0CQJRCNPPXLCSMNKZON1KKXRUTDR1K1U5GV5ODB5",
             clientSecret:   "EK5PXBLLHOWJW4HWHHJQMPWEI3I5JYDKTMDNALTIJL1OQDYW",
-            redirectURL:    "breweries://foursquare")
+            redirectURL:    "brewvite://foursquare")
         var configuration = Configuration(client:client)
         configuration.mode = "foursquare"
         configuration.shouldControllNetworkActivityIndicator = true
