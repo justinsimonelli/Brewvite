@@ -21,7 +21,9 @@
                                 <rect key="frame" x="157" y="20" width="60" height="60"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="45"/>
-                                <state key="normal" title="+"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.98431378599999997" green="0.054901964960000001" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="closeAction:" destination="iOc-z1-32h" eventType="touchUpInside" id="4n5-8m-Uij"/>
                                 </connections>
@@ -189,7 +191,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8e-rz-xlB">
-                                <rect key="frame" x="20" y="435" width="335" height="50"/>
+                                <rect key="frame" x="21" y="413" width="335" height="50"/>
                                 <animations/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -210,6 +212,14 @@
                                     <outletCollection property="gestureRecognizers" destination="g3l-Vg-Whz" appends="YES" id="q9u-dW-HvM"/>
                                 </connections>
                             </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmP-HU-CoE">
+                                <rect key="frame" x="21" y="462" width="335" height="50"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.18998533487319946" green="0.35768887400627136" blue="0.43821841478347778" alpha="1" colorSpace="calibratedRGB"/>
@@ -221,6 +231,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="addressLabel" destination="dmP-HU-CoE" id="pgU-GW-Hmf"/>
                         <outlet property="dateButton" destination="tbF-Nm-g8z" id="VMk-21-8nh"/>
                         <outlet property="dateLabel" destination="Jcf-qo-tGz" id="U1Y-6f-1hD"/>
                         <outlet property="inviteButton" destination="xao-GE-7qN" id="GvQ-Pt-VET"/>
@@ -313,31 +324,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New View Controller!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUP-0j-AqR">
-                                <rect key="frame" x="107" y="323" width="161" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0y-zN-9JU">
                                 <rect key="frame" x="150" y="28" width="60" height="58"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="45"/>
                                 <state key="normal" title="+">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.98431378599999997" green="0.054901964960000001" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="closeAction:" destination="SKs-1B-NmS" eventType="touchUpInside" id="HoW-rF-Pnx"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eBn-V8-Xbj">
+                                <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" id="gxn-Ew-fKp">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gxn-Ew-fKp" id="vHq-Sw-Z3w">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.59489071369171143" green="0.74986636638641357" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="closeButton" destination="o0y-zN-9JU" id="QLk-I4-Iex"/>
+                        <outlet property="userTable" destination="eBn-V8-Xbj" id="HUP-wL-zta"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gtF-Vp-eKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -361,7 +382,7 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="45"/>
                                 <state key="normal" title="+">
-                                    <color key="titleColor" red="0.111818932" green="0.11183650050000001" blue="0.1118125319" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.98431378599999997" green="0.054901964960000001" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="closeAction:" destination="yWL-6y-gFU" eventType="touchUpInside" id="Y14-F8-Wim"/>

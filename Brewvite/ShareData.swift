@@ -8,6 +8,7 @@
 
 import Foundation
 
+typealias JSONParameters = [String: AnyObject]
 
 class ShareData {
     class var sharedInstance: ShareData {
@@ -25,7 +26,7 @@ class ShareData {
     
     var TRANSITION_ACTIONS = (invites: "INVITES", date:"DATE", venues: "VENUES" )
     
-    var selectedVenue : AnyObject? //Some Object
+    var selectedVenue : JSONParameters?
     var selectedTransition: String?
     var selectedDate: NSDate?
     

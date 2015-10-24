@@ -11,8 +11,6 @@ import CoreLocation
 import QuadratTouch
 import MapKit
 
-typealias JSONParameters = [String: AnyObject]
-
 class LocationSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate, UISearchResultsUpdating {
     
     var searchController: UISearchController!
@@ -37,7 +35,6 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
         super.viewDidLoad()
         closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
         
-        //loadListOfCountries()
         configureSearchController()
         session = Session.sharedSession()
         attemptToRetrieveUserLocation()
@@ -78,15 +75,10 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let indexPath = searchResultsTable.indexPathForSelectedRow!
-        let currentCell = searchResultsTable.cellForRowAtIndexPath(indexPath)! as UITableViewCell
-        let selectedData = currentCell.textLabel!.text!
-        
-        print(selectedData)
         searchResultsTable.deselectRowAtIndexPath(indexPath, animated: true)
-        ShareData.sharedInstance.selectedVenue = selectedData
+        let venue = self.venues[indexPath.row]
+        ShareData.sharedInstance.selectedVenue = venue
         ShareData.sharedInstance.selectedTransition = ShareData.sharedInstance.TRANSITION_ACTIONS.venues
-        //searchController.view.removeFromSuperview()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -197,7 +189,7 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
                 */
                 
                 self.location = LocationManager.sharedInstance.location
-            }else{
+            }else if( status == LocationManager.sharedInstance.PERMISSION_DENIED ){
                 print(verboseMessage)
                 
             }

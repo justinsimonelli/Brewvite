@@ -8,11 +8,16 @@
 
 import UIKit
 
-class CreateInviteViewController: UIViewController {
+class CreateInviteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var userTable: UITableView!
 
+    let userArray:[String] = ["justinsims", "skvak", "216aj", "betsdudes", "haliesimo", "eionsimo", "abbeysimo", "tarski", "mjt", "mark", "will", "jon", "scott"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        userTable.delegate = self
+        userTable.dataSource = self
         closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
 
     }
@@ -25,6 +30,45 @@ class CreateInviteViewController: UIViewController {
     @IBAction func closeAction(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCellWithIdentifier("userCell", forIndexPath: indexPath)
+        
+        // Configure the cell...
+        cell.textLabel!.text = userArray[indexPath.row]
+        
+        if cell.selected
+        {
+            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+        }
+        else
+        {
+            cell.accessoryType = UITableViewCellAccessoryType.None
+        }
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        
+        if cell!.selected == true
+        {
+            cell!.accessoryType = UITableViewCellAccessoryType.Checkmark
+        }
+        else
+        {
+            cell!.accessoryType = UITableViewCellAccessoryType.None
+        }
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return userArray.count
+    }
+
     
 
     /*

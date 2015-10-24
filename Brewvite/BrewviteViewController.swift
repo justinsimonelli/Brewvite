@@ -19,6 +19,7 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
     @IBOutlet weak var submitInviteButton: UIButton!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
     
     @IBAction func tapVenueLabel(sender: UIGestureRecognizer) {
         transition.startingPoint = (sender.view?.center)!
@@ -172,7 +173,10 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
             case ShareData.sharedInstance.TRANSITION_ACTIONS.venues:
                 print("venues")
                 locationLabel.adjustsFontSizeToFitWidth = true
-                locationLabel.text = ShareData.sharedInstance.selectedVenue as? String
+                let venueName = (ShareData.sharedInstance.selectedVenue!["name"])!,
+                    venueAddress = (ShareData.sharedInstance.selectedVenue!["location"]!["address"]!)!
+                locationLabel.text = venueName as? String
+                addressLabel.text = venueAddress as? String
                 searchLocationsButton.hidden = true
                 locationLabel.hidden = false
             default:
