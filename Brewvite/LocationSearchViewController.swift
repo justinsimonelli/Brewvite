@@ -37,7 +37,7 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
         
         configureSearchController()
         session = Session.sharedSession()
-        attemptToRetrieveUserLocation()
+        location = Utils.sharedInstance.attemptToRetrieveUserLocation()
         self.searchResultsTable.reloadData()
         
         // Do any additional setup after loading the view.
@@ -153,47 +153,6 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
         
         // Reload the tableview.
         self.searchResultsTable.reloadData()
-    }
-    
-    
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
-    /**
-    Attempts to retrieve the users location.
-    The user will be prompted for their location, and depending on their choice,
-    this may or may not start tracking their location.
-    */
-    private func attemptToRetrieveUserLocation(){
-        
-        LocationManager.sharedInstance.showVerboseMessage = true
-        LocationManager.sharedInstance.autoUpdate = true
-        LocationManager.sharedInstance.startUpdatingLocationWithCompletionHandler { (latitude, longitude, status, verboseMessage, error) -> () in
-            
-            if( status == LocationManager.sharedInstance.PERMISSION_AUTHORIZED ){
-                
-                /*
-                ***********************************************
-                ***********************************************
-                THIS IS A MEGA-MONDO-SUPER HACK! FIX THIS!!!!!!
-                ***********************************************
-                ***********************************************
-                */
-                
-                self.location = LocationManager.sharedInstance.location
-            }else if( status == LocationManager.sharedInstance.PERMISSION_DENIED ){
-                print(verboseMessage)
-                
-            }
-        }
     }
     
 }

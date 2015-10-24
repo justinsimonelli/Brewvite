@@ -68,7 +68,7 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
         UIView.animateWithDuration(2.6, animations: {
             _view.alpha = 1.0;
             }, completion: { (_) in
-                self.delay(1.0, closure: {
+                Utils.sharedInstance.delay(1.0, closure: {
                     UIView.animateWithDuration(1, animations: {
                         _view.alpha = 0.0;
                         }, completion: { (_) in
@@ -91,39 +91,14 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
         return false
     }
     
-    /***
-
-
-     MOVE THIS TO A COMMON CLASS!!!! 
-     I AM DUPLICATED IN AfterSplashViewController
-
-
-
-    */
-    func delay(delay:Double, closure:()->()) {
-        
-        dispatch_after(
-            dispatch_time( DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), closure)
-        
-    }
-    
-    let dateFormatter:NSDateFormatter = NSDateFormatter(),
-        timeFormatter:NSDateFormatter = NSDateFormatter()
-    
     let transition = BubbleTransition()
-    
-    var userLat: Double = 0.0,
-        userLong: Double = 0.0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         locationLabel.hidden = true
         dateLabel.hidden = true
-        //generateButtonBorders(self.dateButton, borderColor: UIColor.whiteColor())
-        //generateButtonBorders(self.whoButton, borderColor: UIColor.whiteColor())
-       //generateButtonBorders(self.locationButton, borderColor: UIColor.whiteColor())
         
-        attemptToRetrieveUserLocation()
+        Utils.sharedInstance.attemptToRetrieveUserLocation()
         
     }
     
@@ -165,7 +140,7 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
             case ShareData.sharedInstance.TRANSITION_ACTIONS.date:
                 print("date")
                 dateLabel.adjustsFontSizeToFitWidth = true
-                dateLabel.text = generateButtonTitleForDate(ShareData.sharedInstance.selectedDate!)
+                dateLabel.text = Utils.sharedInstance.formatDate(ShareData.sharedInstance.selectedDate!)
                 dateButton.hidden = true
                 dateLabel.hidden = false
             case ShareData.sharedInstance.TRANSITION_ACTIONS.invites:
@@ -194,43 +169,6 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
         }
     }
     */
-    
-    private func generateButtonTitleForDate(date:NSDate) -> String{
-        var buttonTileForDate = ""
-        self.dateFormatter.dateFormat = "MMMM dd"
-        self.timeFormatter.dateFormat = "hh:mm a"
-        
-        let formattedDate:String = dateFormatter.stringFromDate(date),
-            formattedTime:String = timeFormatter.stringFromDate(date)
-        
-        buttonTileForDate = formattedDate + " at " + formattedTime;
-        
-        return buttonTileForDate
-    }
-    
-    
-    /**
-        Attempts to retrieve the users location.
-        The user will be prompted for their location, and depending on their choice,
-        this may or may not start tracking their location.
-    */
-    private func attemptToRetrieveUserLocation(){
-        
-        LocationManager.sharedInstance.showVerboseMessage = true
-        LocationManager.sharedInstance.autoUpdate = true
-        LocationManager.sharedInstance.startUpdatingLocationWithCompletionHandler { (latitude, longitude, status, verboseMessage, error) -> () in
-            
-            if( status == LocationManager.sharedInstance.PERMISSION_AUTHORIZED ){
-                self.userLat = latitude
-                self.userLong = longitude
-            }else{
-                print(verboseMessage)
-
-            }
-        }
-
-        
-    }
 
 }
 

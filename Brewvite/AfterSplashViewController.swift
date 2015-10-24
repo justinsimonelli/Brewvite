@@ -25,7 +25,7 @@ class AfterSplashViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         
-        self.delay(1.0, closure: {})
+        Utils.sharedInstance.delay(1.0, closure: {})
         
         let _view:BAFluidView = BAFluidView(frame:self.view.frame)
         _view.fillColor = UIColor(red:0.99, green:0.56, blue:0.15, alpha:1.0)
@@ -39,7 +39,7 @@ class AfterSplashViewController: UIViewController {
         UIView.animateWithDuration(2.6, animations: {
             _view.alpha = 1.0;
             }, completion: { (_) in
-                self.delay(1.0, closure: {
+                Utils.sharedInstance.delay(1.0, closure: {
                     UIView.animateWithDuration(1, animations: {
                         self.view.insertSubview(brewViewController.view, belowSubview: _view)
                         _view.alpha = 0.0;
@@ -54,13 +54,6 @@ class AfterSplashViewController: UIViewController {
         _view.startAnimation()
         
         self.view.insertSubview(_view, aboveSubview: self.view)
-    }
-    
-    func delay(delay:Double, closure:()->()) {
-        
-        dispatch_after(
-            dispatch_time( DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), closure)
-        
     }
 
     override func didReceiveMemoryWarning() {

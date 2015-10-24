@@ -14,6 +14,7 @@
 		2A5E9C791BCEB08B000E4A5B /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9C781BCEB08B000E4A5B /* DatePickerDialog.swift */; };
 		2A5E9C7D1BCF02B1000E4A5B /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9C7C1BCF02B1000E4A5B /* LocationSearchViewController.swift */; };
 		2A5E9C841BCF0B50000E4A5B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9C831BCF0B50000E4A5B /* LocationManager.swift */; };
+		2A76B16A1BDB0B080076CC51 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A76B1691BDB0B080076CC51 /* Utils.swift */; };
 		2AA48CAB1BD5A345007BA4E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AA48CAA1BD5A345007BA4E5 /* InfoPlist.strings */; };
 		2AA48CAD1BD5AAA8007BA4E5 /* InvitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA48CAC1BD5AAA8007BA4E5 /* InvitesViewController.swift */; };
 		2AA48CAF1BD5BF17007BA4E5 /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA48CAE1BD5BF17007BA4E5 /* ListsViewController.swift */; };
@@ -60,6 +61,7 @@
 		2A5E9C781BCEB08B000E4A5B /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		2A5E9C7C1BCF02B1000E4A5B /* LocationSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
 		2A5E9C831BCF0B50000E4A5B /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2A76B1691BDB0B080076CC51 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		2AA48CAA1BD5A345007BA4E5 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		2AA48CAC1BD5AAA8007BA4E5 /* InvitesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitesViewController.swift; sourceTree = "<group>"; };
 		2AA48CAE1BD5BF17007BA4E5 /* ListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			children = (
 				2A3F0D301BD892EB00D81A1C /* ShareData.swift */,
 				2A0C9EEC1BDAF417003AC3F8 /* Cells.swift */,
+				2A76B1691BDB0B080076CC51 /* Utils.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				2A0C9EED1BDAF417003AC3F8 /* Cells.swift in Sources */,
 				2AA48CAF1BD5BF17007BA4E5 /* ListsViewController.swift in Sources */,
 				2AAF04581BD736C400E75A2C /* CreateInviteViewController.swift in Sources */,
+				2A76B16A1BDB0B080076CC51 /* Utils.swift in Sources */,
 				2A5E9C841BCF0B50000E4A5B /* LocationManager.swift in Sources */,
 				2A5E9C7D1BCF02B1000E4A5B /* LocationSearchViewController.swift in Sources */,
 				2AAF045A1BD73A0000E75A2C /* SelectTimeViewController.swift in Sources */,

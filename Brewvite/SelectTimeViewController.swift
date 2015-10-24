@@ -12,6 +12,7 @@ class SelectTimeViewController: UIViewController {
 
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var selectedDate: UIDatePicker!
+    @IBOutlet weak var selectedDateLabel: UILabel!
     
     var date:NSDate?
     let TIME_INTERVAL = 5
