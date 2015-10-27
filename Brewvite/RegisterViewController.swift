@@ -60,7 +60,7 @@ class RegisterViewController: UIViewController {
                             //we made it. we're in brother. set save some shit to their phone so they don't have to log in every time
                             
                             if ( NSUserDefaults.standardUserDefaults().boolForKey(ShareData.sharedInstance.HAS_LOGIN_KEY) == false ){
-                                NSUserDefaults.standardUserDefaults().setValue(_email, forKey: ShareData.sharedInstance.USER_DEFAULTS_USERNAME_KEY)
+                                NSUserDefaults.standardUserDefaults().setValue(_username, forKey: ShareData.sharedInstance.USER_DEFAULTS_USERNAME_KEY)
                             }
                             
                             if( Utils.sharedInstance.getKeychainValue(ShareData.sharedInstance.SECURED_ITEM_PASS_KEY) != nil ){

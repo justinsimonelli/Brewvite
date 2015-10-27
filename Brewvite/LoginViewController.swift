@@ -65,34 +65,6 @@ class LoginViewController: UIViewController {
         super.viewDidAppear(animated)
         closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
         hasLoginKey = NSUserDefaults.standardUserDefaults().valueForKey(ShareData.sharedInstance.USER_DEFAULTS_USERNAME_KEY) != nil
-        
-        //their session is still good, let 'em on in
-        //try logging them in with a current session
-        if let user = PFUser.currentUser() {
-            if user.isAuthenticated() {
-                self.view.hidden = true
-                self.performSegueWithIdentifier(LOGIN_SUCCESS_SEGUE, sender: nil)
-            }
-        }else if( hasLoginKey == true ){
-            //they have some stuff saved in the keychain, let's log em in
-            if(  Utils.sharedInstance.getKeychainValue(ShareData.sharedInstance.SECURED_ITEM_PASS_KEY) != nil ){
-                PFUser.logInWithUsernameInBackground(self.userNameTextField.text!, password: self.passwordTextField.text!) { user, error in
-                    if ( user != nil ) {
-                        self.view.hidden = true
-                        self.performSegueWithIdentifier(self.LOGIN_SUCCESS_SEGUE, sender: nil)
-                        //self.performSegueWithIdentifier(self.LOGIN_SUCCESS_SEGUE, sender: nil)
-                    }else if let error = error {
-                        print(error)
-                        SweetAlert().showAlert("Well this is embarrassing..", subTitle: "Something seems to have gone wrong when registering you. Try again in a few seconds", style: AlertStyle.Warning, buttonTitle: "FINE")
-                    }
-                }
-            }
-
-            
-            
-        }else{
-            //do nothing. they need to log in
-        }
 
     }
 
