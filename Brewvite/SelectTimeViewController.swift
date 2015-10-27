@@ -11,20 +11,35 @@ import UIKit
 class SelectTimeViewController: UIViewController {
 
     @IBOutlet weak var closeButton: UIButton!
-    var buttonCenter:CGPoint!;
-    
     @IBOutlet weak var selectedDate: UIDatePicker!
+    @IBOutlet weak var selectedDateLabel: UILabel!
     
+    var date:NSDate?
+    let TIME_INTERVAL = 5
     
     @IBAction func valueChangedAction(sender: AnyObject) {
-        ShareData.sharedInstance.selectedDate = selectedDate.date
+        date = selectedDate.date
+    }
+    
+    @IBAction func closeAction(sender: AnyObject) {
+        ShareData.sharedInstance.selectedTransition =  ShareData.sharedInstance.TRANSITION_ACTIONS.date
+        if( date == nil){
+            date = selectedDate.date
+        }
+        ShareData.sharedInstance.selectedDate = date
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
-
-        // Do any additional setup after loading the view.
+        date = selectedDate.date
+        let distance = calculateDistaceToNextTimeInterval(selectedDate.date)
+        if( distance > 0){
+            date = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Minute, value: distance, toDate: date!, options: [])
+            selectedDate.setDate(date!, animated: true)
+        }
+        selectedDate.minimumDate = date
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,11 +47,23 @@ class SelectTimeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func closeAction(sender: AnyObject) {
-        //buttonCenter = closeButton.center
-        print("selectedDate=\(ShareData.sharedInstance.selectedDate)")
-        ShareData.sharedInstance.selectedTransition =  ShareData.sharedInstance.TRANSITION_ACTIONS.date
-        self.dismissViewControllerAnimated(true, completion: nil)
+
+    private func calculateDistaceToNextTimeInterval(date: NSDate) -> Int{
+        var TEN_MIN_INTERVAL = 10,
+        INTERVAL = 5,
+        distance = 0
+        
+        let comp = NSCalendar.currentCalendar().components((NSCalendarUnit.Minute), fromDate: date)
+        if( comp.minute % TIME_INTERVAL != 0){
+            
+            let mod = (comp.minute % TEN_MIN_INTERVAL)
+            if( mod > INTERVAL ){
+                distance = (TEN_MIN_INTERVAL - mod)
+            }else{
+                distance = (INTERVAL - mod)
+            }
+        }
+        return distance
     }
 
     /*

@@ -63,6 +63,7 @@ class LocationManager: NSObject,CLLocationManagerDelegate {
     
     var latitude:Double = 0.0
     var longitude:Double = 0.0
+    var location:CLLocation = CLLocation()
     
     var latitudeAsString:String = ""
     var longitudeAsString:String = ""
@@ -237,7 +238,7 @@ class LocationManager: NSObject,CLLocationManagerDelegate {
     internal func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         let arrayOfLocation = locations as NSArray
-        let location = arrayOfLocation.lastObject as! CLLocation
+        location = arrayOfLocation.lastObject as! CLLocation
         let coordLatLon = location.coordinate
         
         latitude  = coordLatLon.latitude
