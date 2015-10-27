@@ -79,7 +79,11 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
         let venue = self.venues[indexPath.row]
         ShareData.sharedInstance.selectedVenue = venue
         ShareData.sharedInstance.selectedTransition = ShareData.sharedInstance.TRANSITION_ACTIONS.venues
-        self.dismissViewControllerAnimated(true, completion: nil)
+        Utils.sharedInstance.delay(0.14, closure: {
+            self.searchController.active = false
+            self.dismissViewControllerAnimated(true, completion: nil)
+        })
+        
     }
     
     func configureSearchController(){

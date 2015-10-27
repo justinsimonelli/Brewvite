@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateInviteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var userTable: UITableView!
 
     let userArray:[String] = ["justinsims", "skvak", "216aj", "betsdudes", "haliesimo", "eionsimo", "abbeysimo", "tarski", "mjt", "mark", "will", "jon", "scott"]
+    private let firebase = Firebase(url: "https://brewvite.firebaseio.com/")
     
     override func viewDidLoad() {
         super.viewDidLoad()

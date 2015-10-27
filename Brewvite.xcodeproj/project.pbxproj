@@ -32,6 +32,7 @@
 		2ABC83521BD878CF0040E670 /* countries.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC83511BD878CF0040E670 /* countries.txt */; };
 		2AC73FCC1BD7538200C741E3 /* Pods_Brewvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC73FCA1BD7538200C741E3 /* Pods_Brewvite.framework */; };
 		2AC73FCD1BD7538200C741E3 /* Pods_BrewviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC73FCB1BD7538200C741E3 /* Pods_BrewviteTests.framework */; };
+		2AFDED211BDF11FE009F3E80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFDED201BDF11FE009F3E80 /* LoginViewController.swift */; };
 		645D58ACC175A2E2849344D1 /* Pods_BrewviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8BF1335D9BD8D599856F6D /* Pods_BrewviteTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		2ABC83511BD878CF0040E670 /* countries.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = countries.txt; sourceTree = "<group>"; };
 		2AC73FCA1BD7538200C741E3 /* Pods_Brewvite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Brewvite.framework; path = "Pods/../build/Debug-iphoneos/Pods_Brewvite.framework"; sourceTree = "<group>"; };
 		2AC73FCB1BD7538200C741E3 /* Pods_BrewviteTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_BrewviteTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_BrewviteTests.framework"; sourceTree = "<group>"; };
+		2AFDED201BDF11FE009F3E80 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4689A38F6D5A29A5D0F37FCC /* Pods_Brewvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brewvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		909F68854D469247334AD2A4 /* Pods-Brewvite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brewvite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brewvite/Pods-Brewvite.release.xcconfig"; sourceTree = "<group>"; };
 		C9A1E8EDA39C8A18C0095299 /* Pods-BrewviteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewviteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrewviteTests/Pods-BrewviteTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				2AAF04571BD736C400E75A2C /* CreateInviteViewController.swift */,
 				2AAF04591BD73A0000E75A2C /* SelectTimeViewController.swift */,
 				2A4FFBE71BD8AFE800FF5A9B /* AfterSplashViewController.swift */,
+				2AFDED201BDF11FE009F3E80 /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				2AAF045A1BD73A0000E75A2C /* SelectTimeViewController.swift in Sources */,
 				2A4FFBEA1BD8C17A00FF5A9B /* SweetAlert.swift in Sources */,
 				2AA48CAD1BD5AAA8007BA4E5 /* InvitesViewController.swift in Sources */,
+				2AFDED211BDF11FE009F3E80 /* LoginViewController.swift in Sources */,
 				2A3F0D311BD892EB00D81A1C /* ShareData.swift in Sources */,
 				2AB0CAC31BCDF89B00038B4E /* BrewviteViewController.swift in Sources */,
 				2AB0CAC11BCDF89B00038B4E /* AppDelegate.swift in Sources */,

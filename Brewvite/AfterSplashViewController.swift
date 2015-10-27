@@ -25,6 +25,7 @@ class AfterSplashViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         
+        /*
         Utils.sharedInstance.delay(1.0, closure: {})
         
         let _view:BAFluidView = BAFluidView(frame:self.view.frame)
@@ -54,6 +55,7 @@ class AfterSplashViewController: UIViewController {
         _view.startAnimation()
         
         self.view.insertSubview(_view, aboveSubview: self.view)
+        */
     }
 
     override func didReceiveMemoryWarning() {

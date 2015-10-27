@@ -1,18 +1,27 @@
 PODS:
   - BAFluidView (0.1.6)
+  - Bolts/Tasks (1.4.0)
   - ChameleonFramework/Default (2.0.4)
   - ChameleonFramework/Swift (2.0.4):
     - ChameleonFramework/Default
+  - Firebase (2.4.2)
+  - Parse (1.9.1):
+    - Bolts/Tasks (>= 1.4.0)
   - QuadratTouch (1.1.1)
 
 DEPENDENCIES:
   - BAFluidView
   - ChameleonFramework/Swift
+  - Firebase (>= 2.4.2)
+  - Parse
   - QuadratTouch (>= 1.0)
 
 SPEC CHECKSUMS:
   BAFluidView: d43890546d372d1f1b47cc12991ab5b257322f23
+  Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
   ChameleonFramework: 5abe69b1f2a6cc79c3c435fcd9d3d855748225ee
+  Firebase: 5e898ed5012c81d28ca5fae1113c6b61a172bc6d
+  Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
   QuadratTouch: 296d83c63a4328f6f40af9fc728fe24f0e3b00d4
 
 COCOAPODS: 0.39.0
