@@ -90,6 +90,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Brewvite/Firebase.framework"
   install_framework "Pods-Brewvite/Parse.framework"
   install_framework "Pods-Brewvite/QuadratTouch.framework"
+  install_framework "Pods-Brewvite/SwiftKeychain.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Brewvite/BAFluidView.framework"
@@ -98,4 +99,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Brewvite/Firebase.framework"
   install_framework "Pods-Brewvite/Parse.framework"
   install_framework "Pods-Brewvite/QuadratTouch.framework"
+  install_framework "Pods-Brewvite/SwiftKeychain.framework"
 fi

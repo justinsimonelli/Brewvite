@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-//import Parse
+import Parse
 import QuadratTouch
 
 @UIApplicationMain
@@ -46,6 +46,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configuration.mode = "foursquare"
         configuration.shouldControllNetworkActivityIndicator = true
         Session.setupSharedSessionWithConfiguration(configuration)
+        
+        //Parse config
+        /**
+
+            EXTERNALIZE THIS
+
+        **/
+        Parse.setApplicationId("rWu8TjmSH2OlM33SjNfVHeQ0umpBe0m5mNy6orif", clientKey: "DT1aEIRGWx6QLeDAT5qImcl6rN8iiyHTPBnldmsV")
+
         
         if let shortcutItem = launchOptions?[UIApplicationLaunchOptionsShortcutItemKey] as? UIApplicationShortcutItem {
             handleShortcut(shortcutItem)

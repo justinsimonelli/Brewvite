@@ -9,6 +9,7 @@ target 'Brewvite' do
     pod 'QuadratTouch', '>= 1.0'
     pod 'Firebase', '>= 2.4.2'
     pod 'Parse'
+    pod 'SwiftKeychain'
 end
 
 target 'BrewviteTests' do
@@ -17,6 +18,7 @@ target 'BrewviteTests' do
     pod 'QuadratTouch', '>= 1.0'
     pod 'Firebase', '>= 2.4.2'
     pod 'Parse'
+    pod 'SwiftKeychain'
 end
 
 target 'BrewviteUITests' do

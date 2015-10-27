@@ -8,6 +8,7 @@
 
 import Foundation
 import MapKit
+import SwiftKeychain
 
 class Utils {
     class var sharedInstance: Utils {
@@ -26,6 +27,8 @@ class Utils {
     private let dateFormatter:NSDateFormatter = NSDateFormatter()
     private let timeFormatter:NSDateFormatter = NSDateFormatter()
     private var location:CLLocation!
+    let sharedKeychain:Keychain = Keychain()
+    let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     
     func formatDate(date:NSDate) -> String{
         var formattedDateString = ""
@@ -73,6 +76,21 @@ class Utils {
         dispatch_after(
             dispatch_time( DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), closure)
         
+    }
+    
+    func getKeychainValue(keyName:String) -> AnyObject?{
+        let passcodeKey = GenericKey(keyName: keyName) ,
+        hasPasscodeKey = Utils.sharedInstance.sharedKeychain.get(passcodeKey)
+        
+        if( hasPasscodeKey.item?.value != nil){
+            return hasPasscodeKey.item?.value;
+        }
+        
+        return nil
+    }
+    
+    func removeKeychainValue(keyName:String) ->  Void{
+        Utils.sharedInstance.sharedKeychain.remove(GenericKey(keyName: keyName))
     }
     
 }

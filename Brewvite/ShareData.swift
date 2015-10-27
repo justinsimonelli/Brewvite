@@ -24,7 +24,10 @@ class ShareData {
         return Static.instance!
     }
     
-    var TRANSITION_ACTIONS = (invites: "INVITES", date:"DATE", venues: "VENUES" )
+    let TRANSITION_ACTIONS = (invites: "INVITES", date:"DATE", venues: "VENUES" )
+    let HAS_LOGIN_KEY = "h4s_l0g1n_k3y",
+        USER_DEFAULTS_USERNAME_KEY = "u53rn4m3",
+        SECURED_ITEM_PASS_KEY = "7h3_p455w0rd_i5";
     
     var selectedVenue : JSONParameters?
     var selectedTransition: String?

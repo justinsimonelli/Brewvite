@@ -8,6 +8,7 @@ PODS:
   - Parse (1.9.1):
     - Bolts/Tasks (>= 1.4.0)
   - QuadratTouch (1.1.1)
+  - SwiftKeychain (0.1.5)
 
 DEPENDENCIES:
   - BAFluidView
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - Firebase (>= 2.4.2)
   - Parse
   - QuadratTouch (>= 1.0)
+  - SwiftKeychain
 
 SPEC CHECKSUMS:
   BAFluidView: d43890546d372d1f1b47cc12991ab5b257322f23
@@ -23,5 +25,6 @@ SPEC CHECKSUMS:
   Firebase: 5e898ed5012c81d28ca5fae1113c6b61a172bc6d
   Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
   QuadratTouch: 296d83c63a4328f6f40af9fc728fe24f0e3b00d4
+  SwiftKeychain: 1387edad8b56c659daa93d9ffc99526bac5b0088
 
 COCOAPODS: 0.39.0
