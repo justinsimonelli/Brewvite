@@ -10,7 +10,7 @@ import UIKit
 import Parse
 import SwiftKeychain
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var closeButton: UIButton!
     
@@ -20,6 +20,24 @@ class LoginViewController: UIViewController {
     
     private let LOGIN_SUCCESS_SEGUE = "loginSuccessSegue"
     private var hasLoginKey: Bool!
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
+        hasLoginKey = NSUserDefaults.standardUserDefaults().valueForKey(ShareData.sharedInstance.USER_DEFAULTS_USERNAME_KEY) != nil
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.userNameTextField.delegate = self
+        self.passwordTextField.delegate = self
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     @IBAction func loginButtonAction(sender: AnyObject) {
         if( userNameTextField.text!.isEmpty ) || ( passwordTextField.text!.isEmpty  ){
@@ -39,7 +57,7 @@ class LoginViewController: UIViewController {
                         //if there is a key set here, somehow it got set elsewhere, which is not good. sooooo.......
                         
                     }else{
-                        let passcodeKey = GenericKey(keyName:ShareData.sharedInstance.SECURED_ITEM_PASS_KEY, value: user?.password)
+                        let passcodeKey = GenericKey(keyName:ShareData.sharedInstance.SECURED_ITEM_PASS_KEY, value: self.passwordTextField.text!)
                         if let error = Utils.sharedInstance.sharedKeychain.add(passcodeKey) {
                             SweetAlert().showAlert("Well this is embarrassing..", subTitle: "Something seems to have gone wrong when logging you. Try again in a few seconds", style: AlertStyle.Warning, buttonTitle: "Ok...")
                             print(error)
@@ -50,7 +68,13 @@ class LoginViewController: UIViewController {
                     self.performSegueWithIdentifier(self.LOGIN_SUCCESS_SEGUE, sender: nil)
                 } else if let error = error {
                     print(error)
-                    SweetAlert().showAlert("Well this is embarrassing..", subTitle: "Something seems to have gone wrong when registering you. Try again in a few seconds", style: AlertStyle.Warning, buttonTitle: "FINE")
+                    //bad creds
+                    if( error.code == 101){
+                        SweetAlert().showAlert("Whoops!", subTitle: "Check your username and password and try again!", style: AlertStyle.Warning, buttonTitle: "Got It")
+                    }else{
+                        SweetAlert().showAlert("Well this is embarrassing..", subTitle: "Something seems to have gone wrong when registering you. Try again in a few seconds", style: AlertStyle.Warning, buttonTitle: "FINE")
+                    }
+                    
                 }
             }
 
@@ -61,16 +85,9 @@ class LoginViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
-        hasLoginKey = NSUserDefaults.standardUserDefaults().valueForKey(ShareData.sharedInstance.USER_DEFAULTS_USERNAME_KEY) != nil
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 
     /*

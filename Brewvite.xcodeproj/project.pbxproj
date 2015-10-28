@@ -198,10 +198,10 @@
 		2AB0CABF1BCDF89B00038B4E /* Brewvite */ = {
 			isa = PBXGroup;
 			children = (
+				2AB0CAC01BCDF89B00038B4E /* AppDelegate.swift */,
 				2A0C9EEF1BDAF44B003AC3F8 /* Util */,
 				2A0C9EEE1BDAF434003AC3F8 /* ViewControllers */,
 				2A5E9C7E1BCF0935000E4A5B /* Third-Party */,
-				2AB0CAC01BCDF89B00038B4E /* AppDelegate.swift */,
 				2AB0CAC41BCDF89B00038B4E /* Main.storyboard */,
 				2AB0CACA1BCDF89C00038B4E /* Assets.xcassets */,
 				2AB0CACC1BCDF89C00038B4E /* LaunchScreen.storyboard */,

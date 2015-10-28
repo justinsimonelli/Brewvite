@@ -10,6 +10,8 @@ import UIKit
 import MapKit
 import AddressBook
 import BAFluidView
+import Parse
+import SwiftKeychain
 
 class BrewviteViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
@@ -20,7 +22,38 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var logoutButton: UIBarButtonItem!
     
+    @IBAction func logoutAction(sender: AnyObject) {
+        PFUser.logOutInBackgroundWithBlock{ error in
+            if let error = error{
+                SweetAlert().showAlert("Well this is embarrassing..", subTitle: "Something seems to have gone wrong when logging you out. Try again in a few seconds", style: AlertStyle.Warning, buttonTitle: "Ok...")
+                print(error)
+            }else{
+                NSUserDefaults.standardUserDefaults().removeObjectForKey(ShareData.sharedInstance.HAS_LOGIN_KEY)
+                NSUserDefaults.standardUserDefaults().removeObjectForKey(ShareData.sharedInstance.USER_DEFAULTS_USERNAME_KEY)
+                let passKey = GenericKey(keyName:ShareData.sharedInstance.SECURED_ITEM_PASS_KEY),
+                    hasStoredPasscode = Utils.sharedInstance.sharedKeychain.get(passKey).item?.value
+                var shouldPresentLandingViewController = true
+                if( hasStoredPasscode != nil )
+                {
+                    if let error = Utils.sharedInstance.sharedKeychain.remove(passKey) {
+                        SweetAlert().showAlert("Well this is embarrassing..", subTitle: "Something seems to have gone wrong when logging you out. Try again in a few seconds", style: AlertStyle.Warning, buttonTitle: "Ok...")
+                        shouldPresentLandingViewController = false
+                        print(error)
+                    }
+                }
+                
+                if( shouldPresentLandingViewController == true ){
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc = storyboard.instantiateViewControllerWithIdentifier("afterSplashViewController")
+                    self.presentViewController(vc, animated: true, completion: nil)
+                }
+                
+            }
+            
+        }
+    }
     @IBAction func tapVenueLabel(sender: UIGestureRecognizer) {
         transition.startingPoint = (sender.view?.center)!
         transition.bubbleColor = UIColor.whiteColor()
