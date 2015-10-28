@@ -112,26 +112,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="IIL-Zt-ZO2">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="qHB-Wo-PPC"/>
-                                    <constraint firstAttribute="width" constant="100" id="rgb-UI-g1O"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="qHB-Wo-PPC"/>
-                                        <exclude reference="rgb-UI-g1O"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="qHB-Wo-PPC"/>
-                                        <include reference="rgb-UI-g1O"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbj-CX-UfM">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -169,6 +149,27 @@
                                     <segue destination="Kmh-dH-VJP" kind="presentation" id="rKc-Zg-6Pc"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="IIL-Zt-ZO2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qHB-Wo-PPC"/>
+                                    <constraint firstAttribute="width" constant="100" id="rgb-UI-g1O"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qHB-Wo-PPC"/>
+                                        <exclude reference="rgb-UI-g1O"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="150" y="217" width="100" height="100"/>
+                                    <mask key="constraints">
+                                        <include reference="qHB-Wo-PPC"/>
+                                        <include reference="rgb-UI-g1O"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -185,9 +186,9 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="IIL-Zt-ZO2"/>
                                 <exclude reference="Vbj-CX-UfM"/>
                                 <exclude reference="Ct5-MJ-EMC"/>
+                                <exclude reference="IIL-Zt-ZO2"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="gvN-hj-MBJ"/>
@@ -203,9 +204,9 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="IIL-Zt-ZO2"/>
                                 <include reference="Vbj-CX-UfM"/>
                                 <include reference="Ct5-MJ-EMC"/>
+                                <include reference="IIL-Zt-ZO2"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="gvN-hj-MBJ"/>
