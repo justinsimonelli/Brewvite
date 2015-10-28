@@ -419,36 +419,36 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="126" width="340" height="30"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="30" y="179" width="340" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSZ-Af-d2B">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="184" width="340" height="30"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="30" y="237" width="340" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YRn-Np-3d1">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="241" width="340" height="30"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="30" y="294" width="340" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="repeat that password" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Z1L-fe-ciW">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="299" width="340" height="30"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="30" y="352" width="340" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="022-dB-89j">
@@ -459,16 +459,48 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="401" width="340" height="45"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="30" y="454" width="340" height="45"/>
                                 </variation>
                                 <connections>
                                     <action selector="registerAction:" destination="Kmh-dH-VJP" eventType="touchUpInside" id="FTt-u2-Hpb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIa-8I-fwI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="45"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.98431378599999997" green="0.054901964960000001" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="170" y="20" width="60" height="60"/>
+                                </variation>
+                                <connections>
+                                    <action selector="closeAction:" destination="Kmh-dH-VJP" eventType="touchUpInside" id="RuU-qQ-qdk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RSZ-Af-d2B" firstAttribute="leading" secondItem="022-dB-89j" secondAttribute="leading" id="4gj-pl-eMb"/>
+                            <constraint firstItem="RSZ-Af-d2B" firstAttribute="top" secondItem="3jc-1z-Ctf" secondAttribute="bottom" constant="28" id="5nZ-6b-HMP"/>
+                            <constraint firstItem="YRn-Np-3d1" firstAttribute="centerX" secondItem="G11-uj-a5v" secondAttribute="centerX" id="CqM-8a-InH"/>
+                            <constraint firstItem="aIa-8I-fwI" firstAttribute="centerX" secondItem="G11-uj-a5v" secondAttribute="centerX" id="Dyo-ah-wjg"/>
+                            <constraint firstItem="RSZ-Af-d2B" firstAttribute="top" secondItem="G11-uj-a5v" secondAttribute="top" constant="184" id="FV4-aP-JVK"/>
+                            <constraint firstItem="022-dB-89j" firstAttribute="top" secondItem="Z1L-fe-ciW" secondAttribute="bottom" constant="72" id="J4c-Zp-KKa"/>
+                            <constraint firstItem="3jc-1z-Ctf" firstAttribute="centerX" secondItem="G11-uj-a5v" secondAttribute="centerX" id="RCF-e2-XJx"/>
+                            <constraint firstItem="RSZ-Af-d2B" firstAttribute="leading" secondItem="YRn-Np-3d1" secondAttribute="leading" id="VTz-Pw-Enh"/>
+                            <constraint firstItem="RSZ-Af-d2B" firstAttribute="leading" secondItem="G11-uj-a5v" secondAttribute="leadingMargin" constant="10" id="W70-XV-jOU"/>
+                            <constraint firstItem="Z1L-fe-ciW" firstAttribute="centerX" secondItem="G11-uj-a5v" secondAttribute="centerX" id="X16-Ay-EYB"/>
+                            <constraint firstItem="022-dB-89j" firstAttribute="centerX" secondItem="G11-uj-a5v" secondAttribute="centerX" id="ajd-bb-wsn"/>
+                            <constraint firstItem="RSZ-Af-d2B" firstAttribute="leading" secondItem="3jc-1z-Ctf" secondAttribute="leading" id="dZK-UR-qyK"/>
+                            <constraint firstItem="RSZ-Af-d2B" firstAttribute="leading" secondItem="Z1L-fe-ciW" secondAttribute="leading" id="noV-YD-7w7"/>
+                            <constraint firstItem="Z1L-fe-ciW" firstAttribute="top" secondItem="YRn-Np-3d1" secondAttribute="bottom" constant="28" id="qnz-0U-zfd"/>
+                            <constraint firstItem="YRn-Np-3d1" firstAttribute="top" secondItem="RSZ-Af-d2B" secondAttribute="bottom" constant="27" id="v9d-ao-rWv"/>
+                            <constraint firstItem="RSZ-Af-d2B" firstAttribute="centerX" secondItem="G11-uj-a5v" secondAttribute="centerX" id="wbQ-pN-syf"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="3jc-1z-Ctf"/>
@@ -476,6 +508,25 @@
                                 <exclude reference="YRn-Np-3d1"/>
                                 <exclude reference="Z1L-fe-ciW"/>
                                 <exclude reference="022-dB-89j"/>
+                                <exclude reference="aIa-8I-fwI"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Dyo-ah-wjg"/>
+                                <exclude reference="RCF-e2-XJx"/>
+                                <exclude reference="4gj-pl-eMb"/>
+                                <exclude reference="5nZ-6b-HMP"/>
+                                <exclude reference="FV4-aP-JVK"/>
+                                <exclude reference="VTz-Pw-Enh"/>
+                                <exclude reference="W70-XV-jOU"/>
+                                <exclude reference="dZK-UR-qyK"/>
+                                <exclude reference="noV-YD-7w7"/>
+                                <exclude reference="wbQ-pN-syf"/>
+                                <exclude reference="CqM-8a-InH"/>
+                                <exclude reference="v9d-ao-rWv"/>
+                                <exclude reference="X16-Ay-EYB"/>
+                                <exclude reference="qnz-0U-zfd"/>
+                                <exclude reference="J4c-Zp-KKa"/>
+                                <exclude reference="ajd-bb-wsn"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -485,10 +536,30 @@
                                 <include reference="YRn-Np-3d1"/>
                                 <include reference="Z1L-fe-ciW"/>
                                 <include reference="022-dB-89j"/>
+                                <include reference="aIa-8I-fwI"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Dyo-ah-wjg"/>
+                                <include reference="RCF-e2-XJx"/>
+                                <include reference="4gj-pl-eMb"/>
+                                <include reference="5nZ-6b-HMP"/>
+                                <include reference="FV4-aP-JVK"/>
+                                <include reference="VTz-Pw-Enh"/>
+                                <include reference="W70-XV-jOU"/>
+                                <include reference="dZK-UR-qyK"/>
+                                <include reference="noV-YD-7w7"/>
+                                <include reference="wbQ-pN-syf"/>
+                                <include reference="CqM-8a-InH"/>
+                                <include reference="v9d-ao-rWv"/>
+                                <include reference="X16-Ay-EYB"/>
+                                <include reference="qnz-0U-zfd"/>
+                                <include reference="J4c-Zp-KKa"/>
+                                <include reference="ajd-bb-wsn"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="closeButton" destination="aIa-8I-fwI" id="6Vs-Hv-068"/>
                         <outlet property="emailTextField" destination="3jc-1z-Ctf" id="DJW-I8-iBi"/>
                         <outlet property="passwordTextField1" destination="YRn-Np-3d1" id="kgc-LD-Dvp"/>
                         <outlet property="passwordTextField2" destination="Z1L-fe-ciW" id="G6M-Em-nsr"/>
@@ -657,36 +728,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ta-SN-Yc9">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="45"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" red="0.98431378599999997" green="0.054901964960000001" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="170" y="28" width="60" height="60"/>
-                                </variation>
-                                <connections>
-                                    <action selector="closeAction:" destination="iNw-Xq-Qzg" eventType="touchUpInside" id="csA-85-ZHu"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GBD-Ji-qlf">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="184" width="360" height="30"/>
+                                    <rect key="frame" x="20" y="185" width="340" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d2o-IM-Z3R">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="243" width="360" height="30"/>
+                                    <rect key="frame" x="20" y="243" width="340" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep1-ia-2jX">
@@ -698,10 +755,24 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="336" width="360" height="45"/>
+                                    <rect key="frame" x="20" y="336" width="340" height="45"/>
                                 </variation>
                                 <connections>
                                     <action selector="loginButtonAction:" destination="iNw-Xq-Qzg" eventType="touchUpInside" id="GbD-3D-hgD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ta-SN-Yc9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="45"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.98431378599999997" green="0.054901964960000001" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="160" y="28" width="60" height="60"/>
+                                </variation>
+                                <connections>
+                                    <action selector="closeAction:" destination="iNw-Xq-Qzg" eventType="touchUpInside" id="csA-85-ZHu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -709,18 +780,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="0ta-SN-Yc9"/>
                                 <exclude reference="GBD-Ji-qlf"/>
                                 <exclude reference="d2o-IM-Z3R"/>
                                 <exclude reference="Ep1-ia-2jX"/>
+                                <exclude reference="0ta-SN-Yc9"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="0ta-SN-Yc9"/>
                                 <include reference="GBD-Ji-qlf"/>
                                 <include reference="d2o-IM-Z3R"/>
                                 <include reference="Ep1-ia-2jX"/>
+                                <include reference="0ta-SN-Yc9"/>
                             </mask>
                         </variation>
                     </view>
@@ -769,6 +840,6 @@
         <image name="Search" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xwE-gD-Vkh"/>
+        <segue reference="3aj-yK-rkL"/>
     </inferredMetricsTieBreakers>
 </document>

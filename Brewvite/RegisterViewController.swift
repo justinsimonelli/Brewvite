@@ -19,10 +19,11 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextField1: UITextField!
     @IBOutlet weak var passwordTextField2: UITextField!
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var closeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
         // Do any additional setup after loading the view.
     }
     
@@ -31,6 +32,9 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func closeAction(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     @IBAction func registerAction(sender: AnyObject) {
         //one of the fields was empy

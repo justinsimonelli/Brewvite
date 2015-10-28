@@ -23,15 +23,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
-        hasLoginKey = NSUserDefaults.standardUserDefaults().valueForKey(ShareData.sharedInstance.USER_DEFAULTS_USERNAME_KEY) != nil
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.userNameTextField.delegate = self
         self.passwordTextField.delegate = self
+        closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
+        hasLoginKey = NSUserDefaults.standardUserDefaults().valueForKey(ShareData.sharedInstance.USER_DEFAULTS_USERNAME_KEY) != nil
+
     }
     
     override func didReceiveMemoryWarning() {
