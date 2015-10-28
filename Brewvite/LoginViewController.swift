@@ -23,6 +23,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        userNameTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     override func viewDidLoad() {
@@ -82,11 +84,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func closeAction(sender: AnyObject) {
+        self.view.endEditing(true)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        self.view.endEditing(true)
+        if( textField == userNameTextField ){
+            passwordTextField.becomeFirstResponder()
+        }else if( textField == passwordTextField ){
+            passwordTextField.resignFirstResponder()
+        }
         return false
     }
 

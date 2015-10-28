@@ -10,7 +10,7 @@ import UIKit
 import Parse
 import SwiftKeychain
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
 
     private let REGISTER_SUCCESS_SEGUE = "registerSuccessSegue"
     
@@ -24,6 +24,10 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
+        emailTextField.delegate = self
+        usernameTextField.delegate = self
+        passwordTextField1.delegate = self
+        passwordTextField2.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -33,6 +37,7 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func closeAction(sender: AnyObject) {
+        self.view.endEditing(true)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -103,6 +108,20 @@ class RegisterViewController: UIViewController {
         }
         
         
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if( textField == emailTextField ){
+            usernameTextField.becomeFirstResponder()
+        }else if(textField == usernameTextField){
+            passwordTextField1.becomeFirstResponder()
+        }else if( textField == passwordTextField1 ){
+            passwordTextField2.becomeFirstResponder()
+        }else if(textField == passwordTextField2){
+            textField.resignFirstResponder()
+        }
+        
+        return true
     }
     
 
