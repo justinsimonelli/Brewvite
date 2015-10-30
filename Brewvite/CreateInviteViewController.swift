@@ -15,8 +15,9 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var userTable: UITableView!
     var searchController: UISearchController!
     var currentUser:PFUser!
-    var friendList: [PFUser] = [PFUser]()
-    var userSearchResults: [PFUser]!
+    var friendList: [PFUser] = [PFUser](),
+        userSearchResults: [PFUser]!,
+        selectedFriends:[PFUser] = [PFUser]()
     
     
     override func viewDidLoad() {
@@ -35,6 +36,9 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     @IBAction func closeAction(sender: AnyObject) {
+        if( selectedFriends.count > 0 ){
+            ShareData.sharedInstance.invitedUsers = self.selectedFriends
+        }
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -46,14 +50,12 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
         let friend = friendList[indexPath.row]
         cell.textLabel!.text = friend.username!
         
-        /*
         if cell.selected{
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
         }
         else{
             cell.accessoryType = UITableViewCellAccessoryType.None
         }
-        */
         
         return cell
     }
@@ -64,9 +66,11 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
         
         if cell!.selected == true{
             cell!.accessoryType = UITableViewCellAccessoryType.Checkmark
+            self.selectedFriends.append(friendList[indexPath.row])
         }
         else{
             cell!.accessoryType = UITableViewCellAccessoryType.None
+            self.friendList.removeAtIndex(indexPath.row)
         }
     }
     

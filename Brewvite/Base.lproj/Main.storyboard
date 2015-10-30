@@ -226,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DrW-VZ-aFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2092.5" y="217.5"/>
+            <point key="canvasLocation" x="-2391" y="225.75"/>
         </scene>
         <!--Brewvite-->
         <scene sceneID="tne-QT-ifu">
@@ -594,14 +594,14 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="7oS-Y3-2hY">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <animations/>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" id="gxn-Ew-fKp">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gxn-Ew-fKp" id="vHq-Sw-Z3w">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -626,25 +626,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gtF-Vp-eKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-32.25" y="1003.875"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="vNk-D2-UvF">
-            <objects>
-                <viewController id="MF2-a2-5wL" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="P4F-p9-5Cb"/>
-                        <viewControllerLayoutGuide type="bottom" id="zWW-L0-Tw0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aBb-at-OPa">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D35-dg-wxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="729" y="1053.75"/>
+            <point key="canvasLocation" x="315.75" y="1003.875"/>
         </scene>
         <!--Select Time View Controller-->
         <scene sceneID="dcM-wz-gya">

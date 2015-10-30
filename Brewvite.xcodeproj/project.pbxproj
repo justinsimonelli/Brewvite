@@ -17,6 +17,8 @@
 		2A5E9C791BCEB08B000E4A5B /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9C781BCEB08B000E4A5B /* DatePickerDialog.swift */; };
 		2A5E9C7D1BCF02B1000E4A5B /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9C7C1BCF02B1000E4A5B /* LocationSearchViewController.swift */; };
 		2A5E9C841BCF0B50000E4A5B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9C831BCF0B50000E4A5B /* LocationManager.swift */; };
+		2A5EB8D61BE339C60091346F /* BrewviteRoles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EB8D51BE339C60091346F /* BrewviteRoles.swift */; };
+		2A5EB8D81BE33A460091346F /* BrewviteStatuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EB8D71BE33A460091346F /* BrewviteStatuses.swift */; };
 		2A76B16A1BDB0B080076CC51 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A76B1691BDB0B080076CC51 /* Utils.swift */; };
 		2A953D211BDF27EE006F989F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A953D201BDF27EE006F989F /* RegisterViewController.swift */; };
 		2AA48CAB1BD5A345007BA4E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AA48CAA1BD5A345007BA4E5 /* InfoPlist.strings */; };
@@ -36,7 +38,6 @@
 		2ABC83521BD878CF0040E670 /* countries.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC83511BD878CF0040E670 /* countries.txt */; };
 		2AC73FCC1BD7538200C741E3 /* Pods_Brewvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC73FCA1BD7538200C741E3 /* Pods_Brewvite.framework */; };
 		2AC73FCD1BD7538200C741E3 /* Pods_BrewviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC73FCB1BD7538200C741E3 /* Pods_BrewviteTests.framework */; };
-		2AF01DA61BE2DDC700288E5E /* QueryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF01DA51BE2DDC700288E5E /* QueryHelper.swift */; };
 		2AFDED211BDF11FE009F3E80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFDED201BDF11FE009F3E80 /* LoginViewController.swift */; };
 		645D58ACC175A2E2849344D1 /* Pods_BrewviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8BF1335D9BD8D599856F6D /* Pods_BrewviteTests.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,8 @@
 		2A5E9C781BCEB08B000E4A5B /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		2A5E9C7C1BCF02B1000E4A5B /* LocationSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
 		2A5E9C831BCF0B50000E4A5B /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2A5EB8D51BE339C60091346F /* BrewviteRoles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewviteRoles.swift; sourceTree = "<group>"; };
+		2A5EB8D71BE33A460091346F /* BrewviteStatuses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewviteStatuses.swift; sourceTree = "<group>"; };
 		2A76B1691BDB0B080076CC51 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		2A953D201BDF27EE006F989F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2AA48CAA1BD5A345007BA4E5 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
@@ -95,7 +98,6 @@
 		2ABC83511BD878CF0040E670 /* countries.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = countries.txt; sourceTree = "<group>"; };
 		2AC73FCA1BD7538200C741E3 /* Pods_Brewvite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Brewvite.framework; path = "Pods/../build/Debug-iphoneos/Pods_Brewvite.framework"; sourceTree = "<group>"; };
 		2AC73FCB1BD7538200C741E3 /* Pods_BrewviteTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_BrewviteTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_BrewviteTests.framework"; sourceTree = "<group>"; };
-		2AF01DA51BE2DDC700288E5E /* QueryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryHelper.swift; sourceTree = "<group>"; };
 		2AFDED201BDF11FE009F3E80 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4689A38F6D5A29A5D0F37FCC /* Pods_Brewvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brewvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		909F68854D469247334AD2A4 /* Pods-Brewvite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brewvite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brewvite/Pods-Brewvite.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,7 +177,8 @@
 				2A41463C1BE2CFD700BC582E /* Brewvite.swift */,
 				2A41463E1BE2D61500BC582E /* BrewviteUsersX.swift */,
 				2A4146401BE2D82400BC582E /* BrewviteFriend.swift */,
-				2AF01DA51BE2DDC700288E5E /* QueryHelper.swift */,
+				2A5EB8D51BE339C60091346F /* BrewviteRoles.swift */,
+				2A5EB8D71BE33A460091346F /* BrewviteStatuses.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -504,9 +507,9 @@
 				2AA48CAF1BD5BF17007BA4E5 /* ListsViewController.swift in Sources */,
 				2AAF04581BD736C400E75A2C /* CreateInviteViewController.swift in Sources */,
 				2A76B16A1BDB0B080076CC51 /* Utils.swift in Sources */,
-				2AF01DA61BE2DDC700288E5E /* QueryHelper.swift in Sources */,
 				2A4146411BE2D82400BC582E /* BrewviteFriend.swift in Sources */,
 				2A5E9C841BCF0B50000E4A5B /* LocationManager.swift in Sources */,
+				2A5EB8D61BE339C60091346F /* BrewviteRoles.swift in Sources */,
 				2A953D211BDF27EE006F989F /* RegisterViewController.swift in Sources */,
 				2A5E9C7D1BCF02B1000E4A5B /* LocationSearchViewController.swift in Sources */,
 				2AAF045A1BD73A0000E75A2C /* SelectTimeViewController.swift in Sources */,
@@ -514,6 +517,7 @@
 				2AA48CAD1BD5AAA8007BA4E5 /* InvitesViewController.swift in Sources */,
 				2AFDED211BDF11FE009F3E80 /* LoginViewController.swift in Sources */,
 				2A3F0D311BD892EB00D81A1C /* ShareData.swift in Sources */,
+				2A5EB8D81BE33A460091346F /* BrewviteStatuses.swift in Sources */,
 				2AB0CAC31BCDF89B00038B4E /* BrewviteViewController.swift in Sources */,
 				2AB0CAC11BCDF89B00038B4E /* AppDelegate.swift in Sources */,
 			);

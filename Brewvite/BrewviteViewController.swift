@@ -86,7 +86,11 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
     
     @IBAction func drinkUpAction(sender: UIButton) {
         
-        if( ShareData.sharedInstance.selectedDate == nil || ShareData.sharedInstance.selectedVenue == nil ){
+        if( ShareData.sharedInstance.selectedDate == nil ||
+            ShareData.sharedInstance.selectedVenue == nil ||
+            (ShareData.sharedInstance.invitedUsers == nil ||
+                ShareData.sharedInstance.invitedUsers?.count == 0) )
+        {
             SweetAlert().showAlert("Drop the beer!", subTitle: "You forgot to add some stuff!", style: AlertStyle.Warning, buttonTitle: "Got it")
         }
         else{

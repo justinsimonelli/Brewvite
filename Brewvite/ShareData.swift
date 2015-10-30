@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Parse
 
 typealias JSONParameters = [String: AnyObject]
 
@@ -32,6 +33,7 @@ class ShareData {
     var selectedVenue : JSONParameters?
     var selectedTransition: String?
     var selectedDate: NSDate?
+    var invitedUsers: [PFUser]?
     
 
 }
