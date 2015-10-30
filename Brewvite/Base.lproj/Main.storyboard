@@ -43,7 +43,7 @@
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="3cv-Th-8cU" detailTextLabel="S8P-RY-dWX" style="IBUITableViewCellStyleSubtitle" id="IEJ-jd-2Nj">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="venueCell" textLabel="3cv-Th-8cU" detailTextLabel="S8P-RY-dWX" style="IBUITableViewCellStyleSubtitle" id="IEJ-jd-2Nj">
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IEJ-jd-2Nj" id="QYg-0e-fkg">
@@ -259,7 +259,7 @@
                                 </state>
                                 <connections>
                                     <action selector="selectInviteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tGe-Cf-iqr"/>
-                                    <segue destination="SKs-1B-NmS" kind="presentation" identifier="createSegue" id="gfQ-RG-4EP"/>
+                                    <segue destination="SKs-1B-NmS" kind="presentation" identifier="addUsersSegue" id="gfQ-RG-4EP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbF-Nm-g8z">
@@ -349,7 +349,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="839.25" y="267.375"/>
+            <point key="canvasLocation" x="770.25" y="266.625"/>
         </scene>
         <!--Invites View Controller-->
         <scene sceneID="u4y-cw-lff">
@@ -582,6 +582,9 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.98431378599999997" green="0.054901964960000001" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="157" y="20" width="60" height="58"/>
+                                </variation>
                                 <connections>
                                     <action selector="closeAction:" destination="SKs-1B-NmS" eventType="touchUpInside" id="HoW-rF-Pnx"/>
                                 </connections>
@@ -590,6 +593,12 @@
                                 <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="7oS-Y3-2hY">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <animations/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" id="gxn-Ew-fKp">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -602,6 +611,9 @@
                                         <animations/>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="74" width="375" height="593"/>
+                                </variation>
                             </tableView>
                         </subviews>
                         <animations/>
@@ -614,7 +626,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gtF-Vp-eKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98.25" y="1072.875"/>
+            <point key="canvasLocation" x="-32.25" y="1003.875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vNk-D2-UvF">
+            <objects>
+                <viewController id="MF2-a2-5wL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P4F-p9-5Cb"/>
+                        <viewControllerLayoutGuide type="bottom" id="zWW-L0-Tw0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aBb-at-OPa">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D35-dg-wxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="1053.75"/>
         </scene>
         <!--Select Time View Controller-->
         <scene sceneID="dcM-wz-gya">
@@ -676,7 +706,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5mG-Fc-lzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711.5" y="1091.5"/>
+            <point key="canvasLocation" x="1416.75" y="1049.625"/>
         </scene>
         <!--LoginViewController-->
         <scene sceneID="Ewo-DM-TdU">
@@ -769,17 +799,17 @@
             </objects>
             <point key="canvasLocation" x="-1972.5" y="-637.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--mainNavigationController-->
         <scene sceneID="mlL-I7-EXG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sRd-LI-F1T" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainNavigationController" automaticallyAdjustsScrollViewInsets="NO" providesPresentationContextTransitionStyle="YES" id="sRd-LI-F1T" userLabel="mainNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lic-f8-8es">
+                    <navigationBar key="navigationBar" alpha="0.45000000000000001" contentMode="scaleToFill" id="lic-f8-8es">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.49744248390000001" green="0.64893847699999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.49744248390000001" green="0.64893847699999996" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -802,6 +832,6 @@
         <image name="Search" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3aj-yK-rkL"/>
+        <segue reference="xwE-gD-Vkh"/>
     </inferredMetricsTieBreakers>
 </document>

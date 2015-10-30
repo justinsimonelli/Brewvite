@@ -119,7 +119,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //should we hide the view controller here?
         
         
-        self.window?.rootViewController?.dismissViewControllerAnimated(false, completion: nil)
+        //self.window?.rootViewController?.dismissViewControllerAnimated(false, completion: nil)
     }
 
     func applicationWillEnterForeground(application: UIApplication) {

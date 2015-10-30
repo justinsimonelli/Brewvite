@@ -56,7 +56,7 @@ class LocationSearchViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("venueCell", forIndexPath: indexPath)
         let venue = venues[indexPath.row]
         if let venueLocation = venue["location"] as? JSONParameters {
             var detailText = ""

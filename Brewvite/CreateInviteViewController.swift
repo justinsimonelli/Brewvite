@@ -7,20 +7,26 @@
 //
 
 import UIKit
-import Firebase
+import Parse
 
-class CreateInviteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CreateInviteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchResultsUpdating {
+   
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var userTable: UITableView!
-
-    let userArray:[String] = ["justinsims", "skvak", "216aj", "betsdudes", "haliesimo", "eionsimo", "abbeysimo", "tarski", "mjt", "mark", "will", "jon", "scott"]
+    var searchController: UISearchController!
+    var currentUser:PFUser!
+    var friendList: [PFUser] = [PFUser]()
+    var userSearchResults: [PFUser]!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         userTable.delegate = self
         userTable.dataSource = self
+        currentUser = PFUser.currentUser()
         closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
-
+        configureSearchController()
+        findFriends()
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,16 +43,17 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
         let cell = tableView.dequeueReusableCellWithIdentifier("userCell", forIndexPath: indexPath)
         
         // Configure the cell...
-        cell.textLabel!.text = userArray[indexPath.row]
+        let friend = friendList[indexPath.row]
+        cell.textLabel!.text = friend.username!
         
-        if cell.selected
-        {
+        /*
+        if cell.selected{
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
         }
-        else
-        {
+        else{
             cell.accessoryType = UITableViewCellAccessoryType.None
         }
+        */
         
         return cell
     }
@@ -55,19 +62,126 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
     {
         let cell = tableView.cellForRowAtIndexPath(indexPath)
         
-        if cell!.selected == true
-        {
+        if cell!.selected == true{
             cell!.accessoryType = UITableViewCellAccessoryType.Checkmark
         }
-        else
-        {
+        else{
             cell!.accessoryType = UITableViewCellAccessoryType.None
         }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return userArray.count
+        return friendList.count
+    }
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        searchUsers(searchBar.text!)
+    }
+    
+    func searchUsers(searchedUser:String){
+        print("searchUsers executing. searchedUser [\(searchedUser)]")
+        if( searchedUser.isEmpty ){
+            return
+        }
+        
+        let userQuery = PFUser.query()
+        userQuery?.limit = 200
+        userQuery!.whereKey("username",  containsString: searchedUser.lowercaseString)
+        
+        findUsersByQuery(userQuery!,completion: { (results) -> Void in
+            if var userResults = results as? [PFUser]{
+                
+                if( !userResults.isEmpty ){
+                    if( userResults.contains(self.currentUser) ){
+                        userResults.removeAtIndex(userResults.indexOf(self.currentUser)!)
+                    }
+                    
+                    /****
+                     
+                     REMOVE THIS LINE
+                     
+                     ****/
+                    
+                    let selectedFriend:PFUser = userResults[0]
+                    /****
+                     
+                     REMOVE THIS LINE
+                     
+                     ****/
+                    
+                    let friendObj = PFObject(className: BrewviteFriend.parseClassName())
+                    friendObj["user"] = self.currentUser
+                    friendObj["friend"] = selectedFriend
+                    
+                    friendObj.saveInBackgroundWithBlock { (succeeded, error) -> Void in
+                        if succeeded {
+                            print("Object Uploaded")
+                        } else {
+                            print("Error: \(error) \(error!.userInfo)")
+                        }
+                    }
+                    
+                }
+                self.userTable.reloadData()
+            }
+            
+        })
+    }
+    
+    func findFriends(){
+        let query = PFQuery(className: BrewviteFriend.parseClassName())
+        query.whereKey("user", equalTo: currentUser)
+        query.includeKey("friend")
+        findUsersByQuery(query,completion: { (results) -> Void in
+            if let friendResults = results as? [BrewviteFriend] {
+                for brewFriend in friendResults{
+                    self.friendList.append(brewFriend.friend)
+                }
+            }
+            self.userTable.reloadData()
+            
+        })
+    }
+    
+    /**
+     Return a list of PFUser objects given the provided query.
+     **/
+    func findUsersByQuery(query:PFQuery, completion: ((results: [PFObject]) -> Void)) {
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [PFObject]?, error: NSError?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved \(objects!.count) friends.")
+                // Do something with the found objects
+                if let objects = objects as [PFObject]! {
+                    completion(results: objects)
+                }
+            } else {
+                // Log details of the failure
+                print("Error: \(error!) \(error!.userInfo)")
+            }
+        }
+    }
+    
+    func configureSearchController(){
+        
+        self.searchController = UISearchController(searchResultsController: nil)
+        self.searchController.searchBar.returnKeyType = UIReturnKeyType.Search
+        self.searchController.searchResultsUpdater = self
+        self.searchController.searchBar.delegate = self
+        self.searchController.dimsBackgroundDuringPresentation = false
+        self.searchController.searchBar.placeholder = "Find your friends"
+        self.searchController.searchBar.sizeToFit()
+        self.userTable.tableHeaderView = self.searchController.searchBar
+        self.userTable.reloadData()
+        
     }
 
     
