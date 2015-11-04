@@ -18,6 +18,9 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
     var friendList: [PFUser] = [PFUser](),
         userSearchResults: [PFUser]!,
         selectedFriends:[PFUser] = [PFUser]()
+    let userQuery = PFUser.query()
+    
+    let FIND_FRIENDS_SEGUE = "findFriendsSegue"
     
     
     override func viewDidLoad() {
@@ -27,7 +30,12 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
         currentUser = PFUser.currentUser()
         closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
         configureSearchController()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         findFriends()
+        self.navigationController?.navigationBarHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +47,10 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
         if( selectedFriends.count > 0 ){
             ShareData.sharedInstance.invitedUsers = self.selectedFriends
         }
+        searchController.searchBar.resignFirstResponder()
+        self.resignFirstResponder()
         self.dismissViewControllerAnimated(true, completion: nil)
+
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
@@ -65,12 +76,13 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
         let cell = tableView.cellForRowAtIndexPath(indexPath)
         
         if cell!.selected == true{
-            cell!.accessoryType = UITableViewCellAccessoryType.Checkmark
-            self.selectedFriends.append(friendList[indexPath.row])
-        }
-        else{
-            cell!.accessoryType = UITableViewCellAccessoryType.None
-            self.friendList.removeAtIndex(indexPath.row)
+            if( cell!.accessoryType == UITableViewCellAccessoryType.Checkmark ){
+                cell!.accessoryType = UITableViewCellAccessoryType.None
+                self.selectedFriends.removeAtIndex(indexPath.row)
+            }else{
+                cell!.accessoryType = UITableViewCellAccessoryType.Checkmark
+                self.selectedFriends.append(friendList[indexPath.row])
+            }
         }
     }
     
@@ -88,16 +100,18 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
         searchUsers(searchBar.text!)
     }
     
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        self.userQuery?.cancel()
+    }
     func searchUsers(searchedUser:String){
         print("searchUsers executing. searchedUser [\(searchedUser)]")
         if( searchedUser.isEmpty ){
             return
         }
         
-        let userQuery = PFUser.query()
         userQuery?.limit = 200
         userQuery!.whereKey("username",  containsString: searchedUser.lowercaseString)
-        
         findUsersByQuery(userQuery!,completion: { (results) -> Void in
             if var userResults = results as? [PFUser]{
                 
@@ -106,18 +120,20 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
                         userResults.removeAtIndex(userResults.indexOf(self.currentUser)!)
                     }
                     
+                    self.userSearchResults = userResults
+                    self.searchController.active = false
+                    self.performSegueWithIdentifier(self.FIND_FRIENDS_SEGUE, sender: self)
+                    
                     /****
                      
                      REMOVE THIS LINE
                      
-                     ****/
+                    
                     
                     let selectedFriend:PFUser = userResults[0]
-                    /****
                      
-                     REMOVE THIS LINE
                      
-                     ****/
+
                     
                     let friendObj = PFObject(className: BrewviteFriend.parseClassName())
                     friendObj["user"] = self.currentUser
@@ -130,15 +146,29 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
                             print("Error: \(error) \(error!.userInfo)")
                         }
                     }
+                    ****/
                     
                 }
-                self.userTable.reloadData()
+                //self.userTable.reloadData()
             }
             
         })
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBarHidden = false
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if( segue.identifier == FIND_FRIENDS_SEGUE ){
+            let vc = segue.destinationViewController as! FindFriendsTableViewController
+            vc.userSearchResults = self.userSearchResults
+        }
+    }
+    
     func findFriends(){
+        self.friendList = []
         let query = PFQuery(className: BrewviteFriend.parseClassName())
         query.whereKey("user", equalTo: currentUser)
         query.includeKey("friend")
