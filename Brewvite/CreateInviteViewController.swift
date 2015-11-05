@@ -20,7 +20,7 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
         selectedFriends:[PFUser] = [PFUser]()
     let userQuery = PFUser.query()
     
-    let FIND_FRIENDS_SEGUE = "findFriendsSegue"
+    let FIND_FRIENDS_SEARCHBAR_PLACEHOLDER = "Find your friends"
     
     
     override func viewDidLoad() {
@@ -34,8 +34,8 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        findFriends()
         self.navigationController?.navigationBarHidden = true
+        findFriends()
     }
 
     override func didReceiveMemoryWarning() {
@@ -122,7 +122,7 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
                     
                     self.userSearchResults = userResults
                     self.searchController.active = false
-                    self.performSegueWithIdentifier(self.FIND_FRIENDS_SEGUE, sender: self)
+                    self.performSegueWithIdentifier(Constants.SEGUE_FIND_FRIENDS, sender: self)
                     
                     /****
                      
@@ -172,7 +172,7 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
         let query = PFQuery(className: BrewviteFriend.parseClassName())
         query.whereKey("user", equalTo: currentUser)
         query.includeKey("friend")
-        findUsersByQuery(query,completion: { (results) -> Void in
+        Utils.findUsersByQuery(query,completion: { (results) -> Void in
             if let friendResults = results as? [BrewviteFriend] {
                 for brewFriend in friendResults{
                     self.friendList.append(brewFriend.friend)
@@ -182,27 +182,7 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
             
         })
     }
-    
-    /**
-     Return a list of PFUser objects given the provided query.
-     **/
-    func findUsersByQuery(query:PFQuery, completion: ((results: [PFObject]) -> Void)) {
-        query.findObjectsInBackgroundWithBlock {
-            (objects: [PFObject]?, error: NSError?) -> Void in
-            
-            if error == nil {
-                // The find succeeded.
-                print("Successfully retrieved \(objects!.count) friends.")
-                // Do something with the found objects
-                if let objects = objects as [PFObject]! {
-                    completion(results: objects)
-                }
-            } else {
-                // Log details of the failure
-                print("Error: \(error!) \(error!.userInfo)")
-            }
-        }
-    }
+
     
     func configureSearchController(){
         
@@ -211,7 +191,7 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
         self.searchController.searchResultsUpdater = self
         self.searchController.searchBar.delegate = self
         self.searchController.dimsBackgroundDuringPresentation = false
-        self.searchController.searchBar.placeholder = "Find your friends"
+        self.searchController.searchBar.placeholder = self.FIND_FRIENDS_SEARCHBAR_PLACEHOLDER
         self.searchController.searchBar.sizeToFit()
         self.userTable.tableHeaderView = self.searchController.searchBar
         self.userTable.reloadData()

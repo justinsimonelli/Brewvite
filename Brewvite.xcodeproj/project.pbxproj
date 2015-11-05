@@ -40,6 +40,7 @@
 		2AC73FCD1BD7538200C741E3 /* Pods_BrewviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC73FCB1BD7538200C741E3 /* Pods_BrewviteTests.framework */; };
 		2AFDED211BDF11FE009F3E80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFDED201BDF11FE009F3E80 /* LoginViewController.swift */; };
 		645D58ACC175A2E2849344D1 /* Pods_BrewviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8BF1335D9BD8D599856F6D /* Pods_BrewviteTests.framework */; };
+		F3BBA7F21BEAFED800B27F76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBA7F11BEAFED800B27F76 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		909F68854D469247334AD2A4 /* Pods-Brewvite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brewvite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brewvite/Pods-Brewvite.release.xcconfig"; sourceTree = "<group>"; };
 		C9A1E8EDA39C8A18C0095299 /* Pods-BrewviteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewviteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrewviteTests/Pods-BrewviteTests.release.xcconfig"; sourceTree = "<group>"; };
 		D1707A3A9F81AE043FE86BF1 /* Pods-BrewviteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewviteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrewviteTests/Pods-BrewviteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3BBA7F11BEAFED800B27F76 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FB8BF1335D9BD8D599856F6D /* Pods_BrewviteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewviteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 				2A3F0D301BD892EB00D81A1C /* ShareData.swift */,
 				2A0C9EEC1BDAF417003AC3F8 /* Cells.swift */,
 				2A76B1691BDB0B080076CC51 /* Utils.swift */,
+				F3BBA7F11BEAFED800B27F76 /* Constants.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3BBA7F21BEAFED800B27F76 /* Constants.swift in Sources */,
 				2A41463D1BE2CFD700BC582E /* Brewvite.swift in Sources */,
 				2A4FFBE81BD8AFE800FF5A9B /* AfterSplashViewController.swift in Sources */,
 				2AAF04521BD7312100E75A2C /* BubbleTransition.swift in Sources */,

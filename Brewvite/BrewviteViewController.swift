@@ -27,7 +27,7 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
     @IBAction func logoutAction(sender: AnyObject) {
         PFUser.logOutInBackgroundWithBlock{ error in
             if let error = error{
-                SweetAlert().showAlert("Well this is embarrassing..", subTitle: "Something seems to have gone wrong when logging you out. Try again in a few seconds", style: AlertStyle.Warning, buttonTitle: "Ok...")
+                SweetAlert().showAlert(Constants.ALERT_EMBARRASSING_TITLE, subTitle: Constants.ALERT_LOGOUT_ERROR , style: AlertStyle.Warning, buttonTitle: Constants.ALERT_BUTTON_OK )
                 print(error)
             }else{
                 NSUserDefaults.standardUserDefaults().removeObjectForKey(ShareData.sharedInstance.HAS_LOGIN_KEY)
@@ -38,15 +38,15 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
                 if( hasStoredPasscode != nil )
                 {
                     if let error = Utils.sharedInstance.sharedKeychain.remove(passKey) {
-                        SweetAlert().showAlert("Well this is embarrassing..", subTitle: "Something seems to have gone wrong when logging you out. Try again in a few seconds", style: AlertStyle.Warning, buttonTitle: "Ok...")
+                        SweetAlert().showAlert(Constants.ALERT_EMBARRASSING_TITLE, subTitle: Constants.ALERT_LOGOUT_ERROR, style: AlertStyle.Warning, buttonTitle: Constants.ALERT_BUTTON_OK)
                         shouldPresentLandingViewController = false
                         print(error)
                     }
                 }
                 
                 if( shouldPresentLandingViewController == true ){
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = storyboard.instantiateViewControllerWithIdentifier("afterSplashViewController")
+                    let storyboard = UIStoryboard(name: Constants.STORYBOARD_NAME, bundle: nil)
+                    let vc = storyboard.instantiateViewControllerWithIdentifier(Constants.VC_NAME_AFTER_SPLASH)
                     self.presentViewController(vc, animated: true, completion: nil)
                 }
                 
@@ -57,14 +57,14 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
     @IBAction func tapVenueLabel(sender: UIGestureRecognizer) {
         transition.startingPoint = (sender.view?.center)!
         transition.bubbleColor = UIColor.whiteColor()
-        performSegueWithIdentifier("venueSearchSegue", sender: nil)
+        performSegueWithIdentifier(Constants.SEGUE_VENUE_SEARCH, sender: nil)
 
     }
     
     @IBAction func tapDateLabel(sender: UIGestureRecognizer) {
         transition.startingPoint = (sender.view?.center)!
         transition.bubbleColor = UIColor.whiteColor()
-        performSegueWithIdentifier("dateSelectSegue", sender: nil)
+        performSegueWithIdentifier(Constants.SEGUE_DATE_SELECT, sender: nil)
     }
     
     
@@ -91,7 +91,7 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
             (ShareData.sharedInstance.invitedUsers == nil ||
                 ShareData.sharedInstance.invitedUsers?.count == 0) )
         {
-            SweetAlert().showAlert("Drop the beer!", subTitle: "You forgot to add some stuff!", style: AlertStyle.Warning, buttonTitle: "Got it")
+            SweetAlert().showAlert(Constants.ALERT_MISSING_INFO_TITLE, subTitle: Constants.ALERT_MISSING_INFO_ERROR , style: AlertStyle.Warning, buttonTitle: Constants.ALERT_BUTTON_GOT_IT )
         }
         else{
         
@@ -196,16 +196,6 @@ class BrewviteViewController: UIViewController, UIViewControllerTransitioningDel
             }
         }
     }
-
-    /*
-    @IBAction func selectDate(sender: AnyObject) {
-        DatePickerDialog().show("Select Time", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: UIDatePickerMode.DateAndTime, minuteInterval: 5) {
-            (date) -> Void in
-                let buttonTitle = self.generateButtonTitleForDate(date, dateFormatter: self.dateFormatter, timeFormatter: self.timeFormatter)
-                self.dateButton.setTitle(buttonTitle, forState: UIControlState.Normal)
-        }
-    }
-    */
 
 }
 

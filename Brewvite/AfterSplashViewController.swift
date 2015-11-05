@@ -12,8 +12,7 @@ import Parse
 
 class AfterSplashViewController: UIViewController {
     
-    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-    private let LOGIN_SUCCESS_SEGUE = "splashLoginSuccessSegue"
+    let storyBoard : UIStoryboard = UIStoryboard(name: Constants.STORYBOARD_NAME, bundle:nil)
     private var hasLoginKey: Bool!
     let successViewController = Utils.sharedInstance.storyboard.instantiateViewControllerWithIdentifier("brewViewController")
 
@@ -34,7 +33,7 @@ class AfterSplashViewController: UIViewController {
         if let user = PFUser.currentUser() {
             if user.isAuthenticated() {
                 self.view.hidden = true
-                self.performSegueWithIdentifier(LOGIN_SUCCESS_SEGUE, sender: nil)
+                self.performSegueWithIdentifier(Constants.SEGUE_SPLASH_LOGIN_SUCCESS, sender: nil)
             }
             else{
                 shouldAttemptLoginWithNSUserDefaults = true
@@ -59,7 +58,7 @@ class AfterSplashViewController: UIViewController {
                             //empty out nsdefaults
                             NSUserDefaults.standardUserDefaults().removeObjectForKey(ShareData.sharedInstance.USER_DEFAULTS_USERNAME_KEY)
                             Utils.sharedInstance.removeKeychainValue(ShareData.sharedInstance.SECURED_ITEM_PASS_KEY)
-                            SweetAlert().showAlert("Well this is embarrassing..", subTitle: "Something seems to have gone wrong when registering you. Try again in a few seconds", style: AlertStyle.Warning, buttonTitle: "FINE")
+                            SweetAlert().showAlert(Constants.ALERT_EMBARRASSING_TITLE, subTitle: Constants.ALERT_REGISTER_ERROR , style: AlertStyle.Warning, buttonTitle: Constants.ALERT_BUTTON_FINE)
                         }
                     }
                 }
@@ -71,16 +70,5 @@ class AfterSplashViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

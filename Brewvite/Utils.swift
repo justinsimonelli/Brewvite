@@ -30,7 +30,7 @@ class Utils {
     let sharedKeychain:Keychain = Keychain()
     let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     
-    func formatDate(date:NSDate) -> String{
+    static func formatDate(date:NSDate) -> String{
         var formattedDateString = ""
         self.dateFormatter.dateFormat = "MMMM dd"
         self.timeFormatter.dateFormat = "hh:mm a"
@@ -48,7 +48,7 @@ class Utils {
      The user will be prompted for their location, and depending on their choice,
      this may or may not start tracking their location.
      */
-    func attemptToRetrieveUserLocation() -> CLLocation{
+    static func attemptToRetrieveUserLocation() -> CLLocation{
         var userLocation = CLLocation()
         
         LocationManager.sharedInstance.showVerboseMessage = true
@@ -71,14 +71,14 @@ class Utils {
         
     }
     
-    func delay(delay:Double, closure:()->()) {
+    static func delay(delay:Double, closure:()->()) {
         
         dispatch_after(
             dispatch_time( DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), closure)
         
     }
     
-    func getKeychainValue(keyName:String) -> AnyObject?{
+    static func getKeychainValue(keyName:String) -> AnyObject?{
         let passcodeKey = GenericKey(keyName: keyName) ,
         hasPasscodeKey = Utils.sharedInstance.sharedKeychain.get(passcodeKey)
         
@@ -91,6 +91,26 @@ class Utils {
     
     func removeKeychainValue(keyName:String) ->  Void{
         Utils.sharedInstance.sharedKeychain.remove(GenericKey(keyName: keyName))
+    }
+    
+    /**
+     Return a list of PFUser objects given the provided query.
+     **/
+    static func findUsersByQuery(query:PFQuery, completion: ((results: [PFObject]) -> Void)) {
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [PFObject]?, error: NSError?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                // Do something with the found objects
+                if let objects = objects as [PFObject]! {
+                    completion(results: objects)
+                }
+            } else {
+                // Log details of the failure
+                print("Error: \(error!) \(error!.userInfo)")
+            }
+        }
     }
     
 }
