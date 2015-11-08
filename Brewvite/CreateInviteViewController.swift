@@ -112,7 +112,7 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
         
         userQuery?.limit = 200
         userQuery!.whereKey("username",  containsString: searchedUser.lowercaseString)
-        findUsersByQuery(userQuery!,completion: { (results) -> Void in
+        Utils.sharedInstance.findUsersByQuery(userQuery!,completion: { (results) -> Void in
             if var userResults = results as? [PFUser]{
                 
                 if( !userResults.isEmpty ){
@@ -161,7 +161,7 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if( segue.identifier == FIND_FRIENDS_SEGUE ){
+        if( segue.identifier == Constants.SEGUE_FIND_FRIENDS ){
             let vc = segue.destinationViewController as! FindFriendsTableViewController
             vc.userSearchResults = self.userSearchResults
         }
@@ -172,7 +172,7 @@ class CreateInviteViewController: UIViewController, UITableViewDelegate, UITable
         let query = PFQuery(className: BrewviteFriend.parseClassName())
         query.whereKey("user", equalTo: currentUser)
         query.includeKey("friend")
-        Utils.findUsersByQuery(query,completion: { (results) -> Void in
+        Utils.sharedInstance.findUsersByQuery(query,completion: { (results) -> Void in
             if let friendResults = results as? [BrewviteFriend] {
                 for brewFriend in friendResults{
                     self.friendList.append(brewFriend.friend)
